@@ -1,21 +1,22 @@
 // _layout.scss
-
+html {
+	border-top: 3px solid $bright-pink;
+}
 nav {
 	padding: 20px;
 	margin-bottom: 60px;
-	ul {
-		li {
-			padding: 15px 0;
-			text-transform: uppercase;
-			text-align: right;
-			a {
-				text-decoration: none;
-				color: $url;
-				font-size: 14px;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
+	.avatar {
+		border-radius: 50px;
+		overflow: hidden;
+		height: 90px;
+		width: 90px;
+		opacity: .5;
+		@include transition;
+		img {
+			width: 100%;
+		}
+		&:hover {
+			opacity: 1;
 		}
 	}
 }

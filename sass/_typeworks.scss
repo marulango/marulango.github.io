@@ -1,19 +1,22 @@
 // _typeworks.scss
 
 html, body {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 27px;
 	color: $base;
 	@include font-smoothing;
+	cursor: default;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 80px;
 	line-height: 72px;
+	letter-spacing: -2px;
 }
 
 h3 {
 	font-size: 14px;
+	text-transform: uppercase;
 	&:after {
 		width: 60px;
 		height: 1px;
@@ -30,6 +33,9 @@ span {
 	line-height: 20px;
 	letter-spacing: 1px;
 	color: $light-gray;
+	a {
+		color: $light-gray;
+	}
 }
 
 a {
