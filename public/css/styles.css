@@ -976,12 +976,12 @@ nav {
     margin-bottom: 20px; }
     .shot .snap img {
       width: 100%; }
-  .shot #heart {
+  .shot .heart {
     position: relative;
     width: 10px;
     height: 9px;
     display: inline-block; }
-    .shot #heart:before {
+    .shot .heart:before {
       position: absolute;
       content: "";
       left: 5px;
@@ -1001,7 +1001,7 @@ nav {
       -ms-transform-origin: 0 100%;
       -o-transform-origin: 0 100%;
       transform-origin: 0 100%; }
-    .shot #heart:after {
+    .shot .heart:after {
       position: absolute;
       content: "";
       left: 5px;
