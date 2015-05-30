@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>BXE.ME</title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/a9bc6466-fb1b-47e2-9b8d-c3fa19e4677c.js"></script>
+	<!-- scripties <3 -->
+	<meta charset="UTF-8">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="grid-18">
+						<span>@bleedingxedge</span>
+						<h1>Maru Lango</h1>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="grid-16">
+				<h3>I'm a UX/UI designer. I also do code.</h3>
+				<p>My name is Marcela, but people know me better by Maru. I do websites and apps hoping that they'll become your best friends. I also believe Open Source is important, so you can go and check out my <a href="http://github.com/bleedingxedge/">Github</a> page.</p>
+				<p>Besides designing and being a pretty great pokémon master I'm one the girls behing a local <a href="https://www.womenwhocode.com/networks/mexico-city">Women Who Code Chapter</a> and help out with <a href="http://nodeschool.io/mexicocity">Nodeschool Mexico City</a>.</p>
+				<p>If you like, you can reach me at <a href="http://twitter.com/bleedingxedge">twitter</a> or send me an <a href="mailto:maru@bxe.me">e-mail</a>.</p>
+			</div>
+		</div>
+		<div class="row shots"></div>
+		<div class="row">
+			<div class="grid-14">
+				<p>Want to see more? Go check my <a href="https://dribbble.com/bleedingxedge">Dribbble</a> account.</p>
+			</div>
+		</div>
+		<footer>
+			<p>2015 © CC BY-NC-SA 4.0 — Marcela Lango</p>
+		</footer>
+	</div>
+
+	<script type="text/x-pucci-template" id="shot-template">
+	<div class="shot grid-8">
+		<div class="title"><a href="<%= url %>"><%= title %></a></div>
+		<div class="snap"><a href="<%= url %>"><img src="<%= image_url %>"></a></div>
+		<!-- <div class="description"><%= description %></div> -->
+		<div id="heart"></div>
+		<div class="love"><%= likes_count %> likes</div>
+	</div>
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+	
+	<script>
+	var $container = $('.row.shots')
+	var tpl = _.template($('#shot-template').html())
+	$.ajax({
+		url: 'https://api.dribbble.com/players/bleedingxedge/shots?per_page=9',
+		dataType: 'jsonp'
+	})
+	.done(function (data) {
+		var html = _(data.shots).map(function (shot) {
+			return tpl(shot)
+		}).join('\n')
+		$container.append(html)
+	})
+	</script>
+</body>
+</html>

@@ -30,3 +30,5 @@ node_modules
 config.codekit
 node_modules/
 bower.json
+.sass-cache/
+*.scssc
