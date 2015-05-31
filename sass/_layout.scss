@@ -137,5 +137,9 @@ footer {
 	p {
 		font-size: 12px;
 		color: $light-gray;
+		a {
+			color: $light-gray;
+			text-decoration: underline;
+		}
 	}
 }
