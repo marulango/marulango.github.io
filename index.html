@@ -60,7 +60,7 @@
 	var $container = $('.row.shots')
 	var tpl = _.template($('#shot-template').html())
 	$.ajax({
-		url: 'https://api.dribbble.com/players/maruLango/followers?per_page=9',
+		url: 'https://api.dribbble.com/v1/maruLango/shots?per_page=9',
 		dataType: 'jsonp'
 	})
 	.done(function (data) {
