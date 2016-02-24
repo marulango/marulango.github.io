@@ -60,8 +60,10 @@
 	var $container = $('.row.shots')
 	var tpl = _.template($('#shot-template').html())
 	$.ajax({
-		url: 'https://api.dribbble.com/v1/maruLango/shots?per_page=9',
-		dataType: 'jsonp'
+		url: 'https://api.dribbble.com/v1/users/marulango/shots',
+		headers: {
+			Authorization: 'Bearer 4801b9e49d6609420a8374179862292c9d94cfeedc05d1942af631370038d05a'
+		}
 	})
 	.done(function (data) {
 		var html = _(data.shots).map(function (shot) {
