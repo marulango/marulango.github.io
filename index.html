@@ -45,8 +45,8 @@
 
 	<script type="text/x-pucci-template" id="shot-template">
 	<div class="shot grid-8">
-		<div class="title"><a href="<%= url %>"><%= title %></a></div>
-		<div class="snap"><a href="<%= url %>"><img src="<%= image_url %>"></a></div>
+		<div class="title"><a href="<%= html_url %>"><%= title %></a></div>
+		<div class="snap"><a href="<%= html_url %>"><img src="<%= images.hidpi %>"></a></div>
 		<!-- <div class="description"><%= description %></div> -->
 		<span class="heart"></span>
 		<div class="love"><%= likes_count %> likes</div>
@@ -66,7 +66,7 @@
 		}
 	})
 	.done(function (data) {
-		var html = _(data.shots).map(function (shot) {
+		var html = _(data).map(function (shot) {
 			return tpl(shot)
 		}).join('\n')
 		$container.append(html)
