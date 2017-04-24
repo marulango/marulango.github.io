@@ -100,11 +100,13 @@ a {
   -o-transition: all 200ms linear;
   transition: all 200ms linear; }
   a:hover {
-    color: #7ab4f9; }
+    color: #7ab4f9; 
+  }
 
 p {
   margin-bottom: 20px;
-  font-family: "Proxima N W01 Reg"; }
+  font-family: inherit;
+}
 
 /*-----------------------------------------------------
 960 Grid System ~ Core CSS.
@@ -986,6 +988,7 @@ nav {
     line-height: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-family:"Proxima N W01 Reg";
     margin-bottom: 10px; }
     .shot .title a {
       color: #3d3f44;
@@ -994,7 +997,9 @@ nav {
         color: #5b81ce; }
   .shot .description {
     font-size: 15px;
-    line-height: 23px; }
+    line-height: 23px; 
+  font-family:"Proxima N W01 Reg";
+}
   .shot .snap {
     margin-bottom: 20px; }
     .shot .snap img {
