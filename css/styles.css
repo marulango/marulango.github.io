@@ -70,7 +70,9 @@ h1 {
 
 h3 {
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  font-family: "Proxima N W01 Bold"; 
+}
   h3:after {
     width: 60px;
     height: 1px;
@@ -101,7 +103,8 @@ a {
     color: #7ab4f9; }
 
 p {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-family: "Proxima N W01 Reg"; }
 
 /*-----------------------------------------------------
 960 Grid System ~ Core CSS.
