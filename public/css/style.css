@@ -402,6 +402,105 @@ table {
         margin-top: 100
     }
 
+@media (orientation: portrait) {
+        .col-1 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-1 {
+            margin-left: 0;
+        }
+        .col-2 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-2 {
+            margin-left: 0;
+        }
+        .col-3 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-3 {
+            margin-left: 0;
+        }
+        .col-4 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-4 {
+            margin-left: 0;
+        }
+        .col-5 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-5 {
+            margin-left: 0;
+        }
+        .col-6 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-6 {
+            margin-left: 0;
+        }
+        .col-7 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-7 {
+            margin-left: 0;
+        }
+        .col-8 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-8 {
+            margin-left: 0;
+        }
+        .col-9 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-9 {
+            margin-left: 0;
+        }
+        .col-10 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-10 {
+            margin-left: 0;
+        }
+        .col-11 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-11 {
+            margin-left: 0;
+        }
+        .col-12 { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-12 {
+            margin-left: 0;
+        }
+}
+
 @font-face{
         font-family:"DIN Next W01";
         src:url("Fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix");
@@ -488,6 +587,24 @@ body {
     box-shadow: 0 0 2px #e7e8ef;
     transition: all 200ms easein;
 
+    .shot .title a {
+        color: #4b555b;
+    }
+}
+
+.shot .title {
+
+    .shot .title a {
+        color: #4b555b;
+    }
+}
+
+.shot .title a {
+    color: #4b555b;
+}
+
+.shot {
+
     .shot img {
         -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
@@ -505,14 +622,49 @@ body {
         box-shadow: 0 0 5px #e7e8ef;
     }
 
+    .shot:hover .title a {
+        color: #009cff;
+    }
+
     .shot:hover img {
         -webkit-filter: grayscale(0);
                 filter: grayscale(0);
+    }
+
+    .shot:hover .love {
+        opacity: 1;
+    }
+
+    .shot:hover .heart {
+        -webkit-animation: blink .5s steps(4);
+                animation: blink .5s steps(4);
+    }
+
+    .shot:hover .heart:before, .shot:hover .heart:after {
+        background: red;
     }
 }
 
 .shot:hover {
     box-shadow: 0 0 5px #e7e8ef;
+
+    .shot:hover .title a {
+        color: #009cff;
+    }
+}
+
+.shot:hover .title {
+
+    .shot:hover .title a {
+        color: #009cff;
+    }
+}
+
+.shot:hover .title a {
+    color: #009cff;
+}
+
+.shot:hover {
 
     .shot:hover img {
         -webkit-filter: grayscale(0);
@@ -523,6 +675,46 @@ body {
 .shot:hover img {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
+}
+
+.shot:hover {
+
+    .shot:hover .love {
+        opacity: 1;
+    }
+}
+
+.shot:hover .love {
+    opacity: 1;
+}
+
+.shot:hover {
+
+    .shot:hover .heart {
+        -webkit-animation: blink .5s steps(4);
+                animation: blink .5s steps(4);
+    }
+
+    .shot:hover .heart:before, .shot:hover .heart:after {
+        background: red;
+    }
+}
+
+.shot:hover .heart {
+    -webkit-animation: blink .5s steps(4);
+            animation: blink .5s steps(4);
+
+    .shot:hover .heart:before, .shot:hover .heart:after {
+        background: red;
+    }
+}
+
+.shot:hover .heart:before, .shot:hover .heart:after {
+    background: red;
+}
+
+.love {
+    opacity: .5;
 }
 
 .heart {
@@ -541,7 +733,7 @@ body {
     top: 0;
     width: 5px;
     height: 8px;
-    background: red;
+    background: gray;
     border-radius: 5px 5px 0 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -611,6 +803,7 @@ canvas {
     position: absolute;
     z-index: 100;
     top: 0;
+    max-width: 95%;
 }
 
 .row {
@@ -631,6 +824,38 @@ canvas {
 footer {
     -webkit-animation: fadein 3s;
             animation: fadein 3s;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
 }
 
 @-webkit-keyframes fadein {

@@ -1,9 +1,7 @@
-
 body {
     background-color: var(--light);
     color: var(--main);
 }
-
 
 .avatar {
     border-radius: 50%;
@@ -19,15 +17,38 @@ body {
     text-align: left;
     box-shadow: 0 0 2px #e7e8ef;
     transition: all 200ms easein;
+    & .title {
+        & a {
+            color: var(--main);
+        }
+    }
     & img {
         filter: grayscale(100%);
     }
     &:hover {
         box-shadow: 0 0 5px #e7e8ef;
+        & .title {
+            & a {
+                color: var(--link);
+            }
+        }
         & img {
             filter: grayscale(0);
         }
+        & .love {
+            opacity: 1;
+        }
+        & .heart {
+            animation: blink .5s steps(4);
+            &:before, &:after {
+                background: red;
+            }
+        }
     }
+}
+
+.love {
+    opacity: .5;
 }
 
 .heart {
@@ -45,7 +66,7 @@ body {
     top: 0;
     width: 5px;
     height: 8px;
-    background: red;
+    background: gray;
     border-radius: 5px 5px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
@@ -95,4 +116,5 @@ canvas {
     position: absolute;
     z-index: 100;
     top: 0;
+    max-width: 95%;
 }

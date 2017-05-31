@@ -102,3 +102,18 @@
         margin-top: calc($i * 10)
     }
 }
+
+@custom-media --mobile (orientation: portrait);
+
+@media (--mobile) {
+    @for $i from 1 to 12 {
+        .col-$i { 
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-$i {
+            margin-left: 0;
+        }
+    }
+}
