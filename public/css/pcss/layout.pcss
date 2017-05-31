@@ -1,0 +1,98 @@
+
+body {
+    background-color: var(--light);
+    color: var(--main);
+}
+
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+}
+
+.shot {
+    background-color: white;
+    margin: 1rem .5rem;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 0 2px #e7e8ef;
+    transition: all 200ms easein;
+    & img {
+        filter: grayscale(100%);
+    }
+    &:hover {
+        box-shadow: 0 0 5px #e7e8ef;
+        & img {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.heart {
+    position: relative;
+    width: 10px;
+    height: 9px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 5px;
+    top: 0;
+    width: 5px;
+    height: 8px;
+    background: red;
+    border-radius: 5px 5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+.love {
+    display: inline-block;
+}
+
+.snap {
+    margin: 1rem 0;
+    & img {
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 293px;
+    height: 83px;
+    position: absolute;
+    background: var(--light) url('../img/marumaru.png') no-repeat;
+    background-size: 140px;
+    &:hover {
+        opacity: 0;
+    }
+}
+
+ul {
+    & li {
+        display: inline;
+    }
+}
+
+canvas {
+    opacity: .1;
+    position: fixed;
+    z-index: 10;
+    max-width: 95%;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+}

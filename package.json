@@ -1,3 +1,44 @@
 {
-
+  "name": "marulango.github.io",
+  "description": "my webby.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "postcss --config postcss.json --output public/css/style.css public/css/pcss/style.pcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marulango/marulango.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "personal",
+    "cats"
+  ],
+  "author": "Marcela Lango",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/marulango/marulango.github.io/issues"
+  },
+  "homepage": "https://github.com/marulango/marulango.github.io#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "express": "^4.15.3",
+    "postcss": "^6.0.1",
+    "postcss-animation": "0.0.11",
+    "postcss-at-rules-variables": "0.0.25",
+    "postcss-cli": "^4.0.0",
+    "postcss-conditionals": "^2.0.2",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-each": "^0.9.3",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^8.2.0",
+    "postcss-nesting": "^2.3.1"
+  }
 }

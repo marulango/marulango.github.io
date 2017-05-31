@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>MARU MARU</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- scripties <3 -->
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header class="top-3">
+        <!-- maybe something will come up -->
+    </header>
+
+    <div class="container">
+        <canvas id="canvas" alt="Glitchy Logo Canvas"></canvas>
+        <div class="absolute">
+            <div class="row">
+                <div class="col-11 col-offset-1 top-5">
+                    <a href="http://twitter.com/marulango" target="_blank" alt="Twitter">@maruLango</a>
+                    <h2>Full Stack Designer; <br/>From UI to HTML & Assorted JS DataViz</h2>
+                    <p>Hello, I'm Maru. A Designer + FrontEnd hybrid that likes using JS to glitch stuff and also plot pretty charts.</p>
+                    <p> I also have a cat called Git who's very spoiled<span class="blink">_</span></p>
+                </div>
+                <div class="col-10 col-offset-1 top-2">
+                    <ul>
+                        <li><a href="cv2017.pdf" target="_blank">Resume</a></li>
+                        <!-- <li><a href="">Latest Portfolio</a></li> -->
+                        <li><a href="http://github.com/marulango" target="_blank">Github</a></li>
+                        <li><a href="http://dribbble.com/marulango" target="_blank">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center row shots top-5"></div>
+
+            <footer class="top-5">
+                <p>2017 © <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> — Marcela Lango</p>
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/x-pucci-template" id="shot-template">
+        <div class="shot col-5 col-offset-1">
+            <div class="title"><a href="<%= html_url %>"><%= title %></a></div>
+            <div class="snap"><a href="<%= html_url %>"><img src="<%= images.normal %>"></a></div>
+            <span class="heart"></span>
+            <div class="love"><%= likes_count %> likes</div>
+        </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+
+    <script> //chola
+    (function() {
+        var $container = $('.row.shots')
+        var tpl = _.template($('#shot-template').html())
+        $.ajax({
+            url: 'https://api.dribbble.com/v1/users/marulango/shots',
+            headers: {
+                Authorization: 'Bearer 4801b9e49d6609420a8374179862292c9d94cfeedc05d1942af631370038d05a'
+            }
+        })
+        .done(function (data) {
+            var html = _(data).map(function (shot) {
+                return tpl(shot)
+            }).join('\n')
+            $container.append(html)
+        })
+    }())
+    </script>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById('canvas')
+            , context = canvas.getContext('2d')
+            , img = new Image()
+            , w
+            , h
+            , offset
+            , glitchInterval;
+
+        img.src = 'img/marumaru.png';
+        img.onload = function() {
+            init();
+        };
+
+        var init = function() {
+            canvas.width = w = window.innerWidth;
+            canvas.height = h = window.innerHeight;
+            offset = w * .1;
+            clearInterval(glitchInterval);
+                glitchInterval = setInterval(function() {
+                    clear();
+                    context.drawImage(img, 0, 0);
+                    setTimeout(glitchImg, randInt(1, 150)
+                );
+            }, 200);
+        };
+
+        var clear = function() {
+            context.rect(0, 0, w, h);
+            context.fillStyle = '#fcfcfc';
+            context.fill();
+        };
+
+        var glitchImg = function() {
+            for (var i = 0; i < randInt(1, 6); i++) {
+                var x = Math.random() * w;
+                var y = Math.random() * h;
+                var spliceWidth = w - x;
+                var spliceHeight = randInt(5, h / 3.2);
+                context.drawImage(canvas, 0, y, spliceWidth, spliceHeight, x, y, spliceWidth, spliceHeight);
+                context.drawImage(canvas, spliceWidth, y, x, spliceHeight, 0, y, x, spliceHeight);
+            }
+        };
+
+        var randInt = function(a, b) {
+            return ~~(Math.random() * (b - a) + a);
+        };
+    </script>
+</body>
+</html>
