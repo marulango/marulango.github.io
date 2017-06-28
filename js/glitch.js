@@ -17,10 +17,11 @@ var init = function () {
   offset = w * 0.1
   clearInterval(glitchInterval)
   for (var i = 200; i < 3000; i += 200) {
-    (function(ms) {
-        setTimeout(glitchInterval, ms)
+    (function (ms) {
+      setTimeout(glitchInterval, ms)
     }(i))
   }
+}
 
 var clear = function () {
   context.rect(0, 0, w, h)
@@ -28,12 +29,11 @@ var clear = function () {
   context.fill()
 }
 
-var glitchInterval = function(){
-    clear()
-    context.drawImage(img, 0, 0)
-    setTimeout(glitchImg, randInt(1, 150))
+var glitchInterval = function () {
+  clear()
+  context.drawImage(img, 0, 0)
+  setTimeout(glitchImg, randInt(1, 150))
 }
-
 
 var glitchImg = function () {
   for (var i = 0; i < randInt(1, 6); i++) {
