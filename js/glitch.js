@@ -16,19 +16,24 @@ var init = function () {
   canvas.height = h = window.innerHeight
   offset = w * 0.1
   clearInterval(glitchInterval)
-  glitchInterval = setInterval(function () {
-    clear()
-    context.drawImage(img, 0, 0)
-    setTimeout(glitchImg, randInt(1, 150)
-                )
-  }, 200)
-}
+  for (var i = 200; i < 3000; i += 200) {
+    (function(ms) {
+        setTimeout(glitchInterval, ms)
+    }(i))
+  }
 
 var clear = function () {
   context.rect(0, 0, w, h)
   context.fillStyle = '#fcfcfc'
   context.fill()
 }
+
+var glitchInterval = function(){
+    clear()
+    context.drawImage(img, 0, 0)
+    setTimeout(glitchImg, randInt(1, 150))
+}
+
 
 var glitchImg = function () {
   for (var i = 0; i < randInt(1, 6); i++) {
