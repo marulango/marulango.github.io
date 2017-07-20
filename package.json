@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss --config postcss.json --output public/css/style.css public/css/pcss/style.pcss"
+    "css": "postcss --config postcss.json --output css/style.css css/pcss/style.pcss"
   },
   "repository": {
     "type": "git",

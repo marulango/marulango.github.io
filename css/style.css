@@ -363,43 +363,43 @@ table {
 }
 
 .top-1 {
-        margin-top: 10
+        margin-top: 10px
     }
 
 .top-2 {
-        margin-top: 20
+        margin-top: 20px
     }
 
 .top-3 {
-        margin-top: 30
+        margin-top: 30px
     }
 
 .top-4 {
-        margin-top: 40
+        margin-top: 40px
     }
 
 .top-5 {
-        margin-top: 50
+        margin-top: 50px
     }
 
 .top-6 {
-        margin-top: 60
+        margin-top: 60px
     }
 
 .top-7 {
-        margin-top: 70
+        margin-top: 70px
     }
 
 .top-8 {
-        margin-top: 80
+        margin-top: 80px
     }
 
 .top-9 {
-        margin-top: 90
+        margin-top: 90px
     }
 
 .top-10 {
-        margin-top: 100
+        margin-top: 100px
     }
 
 @media (orientation: portrait) {
@@ -547,6 +547,10 @@ h2 {
         font-weight: bold;
     }
 
+h5 {
+        text-transform: uppercase;
+    }
+
 a {
         color: #009cff;
 
@@ -566,6 +570,27 @@ a:hover {
         font-weight: bold;
         color: #4b555b;
     }
+
+.tags {
+
+    .tags span {
+        border: 1px solid #009cff;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-size: .65rem;
+        padding: 2px 5px 0px;
+        color: #009cff;
+    }
+}
+
+.tags span {
+    border: 1px solid #009cff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: .65rem;
+    padding: 2px 5px 0px;
+    color: #009cff;
+}
 
 body {
     background-color: #fcfcfc;
@@ -874,4 +899,29 @@ footer {
     to {
         opacity: 1
     }
+}
+
+.slide {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.slick-slide {
+    margin-right: 15px;
+}
+
+.slick-dots {
+    -webkit-box-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+.slick-dots li button {
+    border: none;
+    font-size: 0;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    width: 2px;
+    height: 5px;
+    margin: 0 15px;
 }
