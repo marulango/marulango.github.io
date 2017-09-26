@@ -1,0 +1,129 @@
+/*-------------------------------------------------------*/
+/* Sliders
+/*-------------------------------------------------------*/
+.owl-carousel {
+  overflow: hidden;
+}
+
+.owl-buttons {
+  position: static;
+}
+
+.owl-pagination {
+  position: relative;
+  margin-top: 30px;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+// Slide dots
+.owl-page {
+  display: inline-block;
+  padding: 6px;
+  position: relative;
+
+  &.active span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    opacity: 1;
+    background: $main-color;
+  }
+
+  span {
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+    background: rgba($text-color,.5);
+    z-index: 100;
+    border-radius: 50%;
+    @include transition ($all);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+// White dots
+.owl-white-dots .owl-page.active span {
+  background: #fff;
+}
+
+.owl-white-dots .owl-page span {
+  background-color: rgba(#fff,.5);
+}
+
+
+// Arrows
+.owl-prev {
+  left: 0;
+  &:before {
+      content: '\f104';
+      display: inline-block;
+      font-family: "ui-icons";
+      margin-right: 5px;
+    }
+}
+
+.owl-next {
+  right: 0;
+    &:after {
+      content: '\f105';
+      display: inline-block;
+      font-family: "ui-icons";
+      margin-left: 5px;
+    }
+}
+
+.owl-prev,
+.owl-next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -23px;
+  text-align: center;
+  line-height: 46px;
+  z-index: 10;
+  width: 46px;
+  height: 46px;
+  font-size: 10px;
+  text-transform: uppercase;
+  @include transition ($all);
+  opacity: 0.5;
+  &:hover {
+    opacity: 0.8;
+    background-color: rgba(255,255,255,0.3);
+    color: $text-color;
+  }
+}
+
+.owl-prev i,
+.owl-next i {
+  font-size: 46px;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+// White arrows
+.owl-white-arrows .owl-prev i,
+.owl-white-arrows .owl-next i {
+  color: #fff;
+}
+
+
+// Dots inside
+.owl-carousel.dots-inside .owl-pagination {
+  position: absolute;
+  bottom: 20px;
+  margin-top: 0;
+}

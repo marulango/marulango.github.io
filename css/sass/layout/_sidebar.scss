@@ -1,0 +1,272 @@
+/*-------------------------------------------------------*/
+/* Sidebar
+/*-------------------------------------------------------*/
+
+.sidebar {
+
+  &-left {
+    float: left;
+  }
+
+  &-widget {
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    & > ul > li:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    & > ul > li:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+
+/* Widget Categories
+-------------------------------------------------------*/
+.widget-categories {
+
+  li a {
+    color: $text-color;
+
+    &:hover, {
+      color: $main-color;
+    }
+  }
+
+  .active a {
+    color: $heading-color;
+  }
+
+  &-count {
+    right: 0;
+    position: absolute;
+    color: $text-color;
+  }
+}
+
+
+/* Widget Filter by Price
+-------------------------------------------------------*/
+
+.widget-filter-by-price {
+
+  #amount {
+    width: 40%;
+    padding: 0;
+    font-size: 14px;
+    color: $heading-color;
+    border: none;
+    background-color: transparent;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  label {
+    font-weight: normal;
+    font-family: $body-font;
+    line-height: 33px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: normal;
+    color: $text-color;
+  }
+
+  .btn {
+    float: right;
+    padding: 0 15px;
+  }
+}
+
+.ui-slider-handle {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: $heading-color;
+  top: -3px;
+  margin-left: -13px;
+  border-radius: 10px;
+}
+
+.ui-slider span:first-of-type {
+  margin-left: 0;
+}
+
+.ui-slider .ui-slider-range {
+  border-radius: 10px;
+  position: absolute;
+  background-color: $main-color;
+  height: 7px;
+}
+
+.ui-slider-horizontal {
+  cursor: pointer;
+  position: relative;
+  height: 7px;
+  background: #ddd;
+  margin-bottom: 20px;
+  border-radius: 1px;
+}
+
+
+
+/* Widget Product List
+-------------------------------------------------------*/
+
+.product-list-widget {
+  img {
+    width: 84px;
+    float: left;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  li {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .product-title {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* Widget Search
+-------------------------------------------------------*/
+
+.widget-search {
+
+  &-button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-icon {
+    font-size: 13px;
+
+    &:hover {
+      color: $bg-dark;
+    }
+  }
+}
+
+
+/* Widget Entry List
+-------------------------------------------------------*/
+
+.entry-list {
+
+  &-item {
+    padding: 20px 0;
+    border-bottom: 1px solid $border-color;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &-item-title {
+    font-size: 14px;
+    margin-bottom: 1px;
+    font-weight: normal;
+    font-family: $body-font;
+    color: $text-color;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  &-item-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+/* Twitter List
+-------------------------------------------------------*/
+
+#tweets {
+
+  li {
+    padding: 8px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .tweet {
+    font-size: 15px;
+
+    a {
+      word-wrap: break-word;
+      color: $heading-color;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  .timePosted {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #929292;
+  }  
+}
+
+
+/* Widget Tags
+-------------------------------------------------------*/
+.widget-tags a {
+  padding: 10px 13px;
+  line-height: 1;
+  margin: 0 6px 6px 0;
+  font-size: 12px;
+  color: $text-color;
+  background-color: $bg-light;
+  display: inline-block;
+  float: left;
+  border-radius: 3px;
+  @include transition($all);
+
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+    border-color: transparent;
+  }
+}

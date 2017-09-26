@@ -1,57 +1,262 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>MARU MARU</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- scripties <3 -->
-    <meta charset="UTF-8">
+  <title>MARU MARU</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,400i,700%7CLato:300,400,400i,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="css/sliders.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+
 </head>
+
 <body>
-    <header class="top-3">
-        <!-- maybe something will come up -->
-    </header>
 
-    <div class="container">
-        <canvas id="canvas" alt="Glitchy Logo Canvas"></canvas>
-        <div class="absolute">
-            <div class="row">
-                <div class="col-11 col-offset-1 top-5">
-                    <a href="http://twitter.com/marulango" target="_blank" alt="Twitter">@maruLango</a>
-                    <h2>UI Designer</h2>
-                    <p>Hello, I'm Maru. A Designer + FrontEnd hybrid that loves crafting interfaces.</p>
-                    <p> I also have a cat called Git who's very spoiled<span class="blink">_</span></p>
-                </div>
-                <div class="col-10 col-offset-1 top-2">
-                    <ul>
-                        <li><a href="cv2017.pdf" target="_blank">Resume</a></li>
-                        <!-- <li><a href="">Latest Portfolio</a></li> -->
-                        <li><a href="http://github.com/marulango" target="_blank">Github</a></li>
-                        <li><a href="http://dribbble.com/marulango" target="_blank">Dribbble</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="center row shots top-5"></div>
-
-            <footer class="top-5">
-                <p>2017 © <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> — Marcela Lango</p>
-            </footer>
-        </div>
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      "Loading..."
     </div>
+  </div>
 
-    <script type="text/x-pucci-template" id="shot-template">
-        <div class="shot col-5 col-offset-1">
-            <div class="title"><a href="<%= html_url %>" target="_blank"><%= title %></a></div>
-            <div class="snap"><a href="<%= html_url %>" target="_blank"><img src="<%= images.normal %>"></a></div>
-            <span class="heart"></span>
-            <div class="love"><%= likes_count %> likes</div>
+  <main class="main-wrapper">
+
+    <!-- Navigation -->
+    <header class="nav nav--dark">
+
+      <div class="nav__holder" id="sticky-nav">
+        <div class="container-fluid container-semi-fluid">
+          <div class="flex-parent">
+
+            <div class="nav__header flex-child clearfix">
+              <!-- Logo -->
+              <div class="logo-wrap">
+                <a href="index.html" class="logo__link logo--left">
+                  <img class="logo logo--dark" src="img/logo_dark.svg" alt="logo">
+                  <img class="logo logo--light" src="img/logo_light.svg" alt="logo">
+                </a>
+              </div>
+
+              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+              </button>
+            </div> <!-- end nav-header -->
+
+            <nav id="navbar-collapse" class="nav__wrap flex-child flex-right nav__wrap collapse navbar-collapse">              
+              <ul class="nav__menu nav__menu--inline">
+
+                <li>
+                  <a href="index.html">Home</a>
+                </li>                
+
+                <li>
+                  <a href="/about.html">About</a>
+                </li>
+
+                <li>
+                  <a href="https://www.twitter.com/marulango" target="_blank">Twitter</a>
+                </li>                
+
+                <li>
+                  <a href="https://www.dribbble.com/marulango" target="_blank">Dribbble</a>
+                </li>
+
+              </ul> <!-- end menu -->
+
+            </nav> <!-- end nav-wrap -->
+        
+          </div> <!-- end flex-parent -->
+        </div> <!-- end container -->
+
+      </div>
+    </header> <!-- end navigation -->
+
+
+    <div class="content-wrapper oh">
+
+      <!-- Portfolio Classic -->
+      <section id="portfolio" class="section-wrap pb-80">
+        <div class="container">
+          <h2>Marcela <i>Maru</i> Lango</h2>
+
+          <!-- Filter -->
+          <div class="portfolio-filter">
+            <a href="#" class="filter active" data-filter="*">All</a>
+            <a href="#" class="filter" data-filter=".ui-design">UX/UI Design</a>
+            <a href="#" class="filter" data-filter=".branding">Branding</a>
+            <a href="#" class="filter" data-filter=".illustration">Illustration</a>
+            <a href="#" class="filter" data-filter=".frontend">Front End</a>
+          </div>
+
+          <div id="portfolio-grid" class="works-grid grid-4-col gutter with-title">
+
+            <div class="work-item ui-design branding frontend">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="datank.html">
+                    <img src="img/portfolio/datank.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="datank.html">Datank.ai</a></h3>
+                  <span class="work-item__category">UI/UX Design, Branding, FrontEnd</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item ui-design frontend">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="ropensci-website.html">
+                    <img src="img/portfolio/ropensci-web.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="ropensci-website.html">ROpenSci Website</a></h3>
+                  <span class="work-item__category">UI/UX Design, Front End</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item branding frontend">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="ropensci.html">
+                    <img src="img/portfolio/ropensci-brand.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="ropensci.html">ROpenSci Branding</a></h3>
+                  <span class="work-item__category">Branding, Front End</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item ui-design branding illustration">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="opencollective.html">
+                    <img src="img/portfolio/oc-gif.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="opencollective.html">OpenCollective</a></h3>
+                  <span class="work-item__category">UI/UX Design, Branding, Illustration</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item ui-design frontend">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="opi.html">
+                    <img src="img/portfolio/opi.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="opi.html">Arquímedes @ OPI Analytics </a></h3>
+                  <span class="work-item__category">UI/UX Design, FrontEnd</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item illustration branding">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                  <a href="nodeschool.html">
+                    <img src="img/portfolio/nodeschool.gif" alt="" class="work-item__img">
+                  </a>
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title"><a href="nodeschool.html">NodeSchool Mexico City</a></h3>
+                  <span class="work-item__category">Illustration, Branding</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+            <div class="work-item">
+              <div class="work-item__container">
+                <div class="work-item__img-holder">
+                    <img src="img/portfolio/soon.gif" alt="" class="work-item__img">
+                </div>
+                <div class="work-item__description">
+                  <h3 class="work-item__title">More projects</h3>
+                  <span class="work-item__category">Coming Soon</span>
+                </div>
+              </div> 
+            </div> <!-- end work-item -->
+
+          </div>
         </div>
-    </script>
+      </section> <!-- end portfolio classic -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+    
+      <!-- Footer -->
+      <footer class="footer bg-dark">
+        <div class="container">
+          <div class="footer__widgets">
+            <div class="row">
 
-    <script src="js/shots.js"></script>
-    <script src="js/glitch.js"></script>
+              <div class="col-xs-12 text-center">
+                <div class="widget footer__get-in-touch">
+                  <div class="footer__logo mb-30">
+                    <img src="img/logo_light.svg" alt="">
+                  </div>
+                  <div class="footer__get-in-touch__box">
+                    <p>Don’t hesitate to drop me a line</p>
+                    <a href="mailto:hi@maruma.ru"> hi@maruma.ru</a>
+                  </div>
+
+                  <div class="footer__socials mt-30 text-center">
+                    <div class="social-icons social-icons--nobase">
+                      <a href="https://www.twitter.com/marulango" target="_blank"><i class="ui-twitter"></i></a>
+                      <a href="https://github.com/marulango" target="_blank"><i class="ui-github"></i></a>
+                      <a href="https://dribbble.com/marulango" target="_blank"><i class="ui-dribbble"></i></a>
+                      <a href="https://www.linkedin.com/in/marulango/" target="_blank"><i class="ui-linkedin"></i></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div> <!-- end get in touch -->
+
+            </div>
+          </div>    
+        </div>
+      </footer> <!-- end footer -->
+
+
+      <div id="back-to-top">
+        <a href="#top"><i class="ui-arrow-up"></i></a>
+      </div>
+
+    </div> <!-- end content wrapper -->
+  </main> <!-- end main wrapper -->
+  
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>  
+  <script type="text/javascript" src="js/scripts.js"></script>
+    
 </body>
 </html>

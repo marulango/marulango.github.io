@@ -1,0 +1,135 @@
+/*-------------------------------------------------------*/
+/* Feature
+/*-------------------------------------------------------*/
+
+.feature {
+  position: relative;
+  text-align: left;
+
+  &__icon-holder {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    font-size: 56px;
+    display: inline-block;
+    color: $heading-color;
+    @include transition (color 0.2s);
+
+    .bg-dark & {
+      color: #fff;
+    }
+  }
+
+  &__icon--gradient {
+    @include text-gradient(#4193d6, $main-color)
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+
+  &__text p {
+    margin-bottom: 0;
+  }
+
+  &__base {
+    background-color: #fff;
+    padding: 60px 50px;
+    overflow: hidden;
+  }
+
+  &--border {
+    border-radius: 5px;
+    border: 1px solid $border-color;
+  }
+
+  &--transparent {
+    .feature__base {
+      background-color: transparent;
+      border-color: rgba(#fff, .4);
+    }
+
+    .feature__icon,
+    .feature__text__paragraph {
+      color: #fff;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Feature 1
+/*-------------------------------------------------------*/
+
+.feature-1 {
+  padding: 130px 115px 130px 0;
+  @include flex(1);
+
+  &:first-child {
+    border-right: 1px solid $border-color;
+
+    @include bp-xs-down {
+      border-right: none;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  &:last-child {
+    padding: 130px 0 130px 115px;
+  }
+
+  @include bp-sm-down {
+    padding: 80px 40px !important;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+
+@include bp-xs-down {
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Feature 2
+/*-------------------------------------------------------*/
+
+.feature-2 {
+  padding: 110px 70px;
+  border-right: 1px solid $border-color-dark;
+
+  @include bp-md-down {
+    padding: 80px 40px;
+    border-right: 0;
+    border-bottom: 1px solid $border-color-dark;
+  }
+
+  @include bp-xs-down {
+    padding: 60px 20px;
+  }
+
+  .feature__icon {
+    position: absolute;
+  }
+
+  .feature__text {
+    padding-left: 85px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Services Slider
+/*-------------------------------------------------------*/
+
+#owl-services-slider .feature {
+  padding: 0 15px;
+}

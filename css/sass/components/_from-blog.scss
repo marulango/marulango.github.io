@@ -1,0 +1,19 @@
+/*-------------------------------------------------------*/
+/* From Blog
+/*-------------------------------------------------------*/
+
+.entry {
+
+  &--minimal {
+    padding: 47px 0;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 0 !important;
+
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+/*-------------------------------------------------------*/
+/* Call To Action
+/*-------------------------------------------------------*/
+
+.call-to-action {  
+  position: relative;
+  padding: 70px 0;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    font-size: 34px;
+    margin-bottom: 15px;
+
+    @include bp-sm-down {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+}
+
+.cta-buttons a {
+  margin: 5px;
+}
+
+.call-to-action.bg-color .btn-white {
+  &:hover {
+    background-color: rgba(255,255,255,.95);
+  }
+
+  &:hover span {
+    color: $bg-dark;
+  }
+}

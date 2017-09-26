@@ -1,0 +1,57 @@
+/*-------------------------------------------------------*/
+/* Team
+/*-------------------------------------------------------*/
+
+.team {
+
+  &__member {
+    @include transform (translate3d(0,0,0));  
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    .team__title {
+      font-size: 20px;
+      margin-bottom: 2px;
+      color: #fff;
+    }
+
+    .social-icons {
+      visibility: hidden;
+      opacity: 0;
+      @include transition ($all);
+    }
+
+    &:hover .team__details {
+      bottom: 0;
+    }
+
+    &:hover .social-icons {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .team__details {
+      position: absolute;
+      overflow: hidden;
+      padding: 50px 10px;
+      width: 100%;
+      z-index: 2;
+      bottom: -30px;
+      @include transition ($all);
+
+      span {
+        color: #fff;
+        font-size: 13px;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+/*-------------------------------------------------------*/
+/* Tables
+/*-------------------------------------------------------*/
+
+table {
+  width: 100%;
+  max-width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  border-top: 1px solid $border-color;
+  padding: 10px;
+}
+
+.table>thead:first-child>tr:first-child>th,
+.table>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+
+.table>thead>tr>th {
+  border-bottom: none;
+}
+
+.table thead tr th {
+  font-size: 12px;
+  color: $heading-color;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.table-bordered,
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+  border: 1px solid $border-color;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: $bg-light;
+}
+
+
+@media (max-width: 539px) {
+
+  .table-wrap {
+    overflow-x: scroll;
+  }
+  
+}

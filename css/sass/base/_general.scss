@@ -1,0 +1,227 @@
+/*-------------------------------------------------------*/
+/* Table of Content
+
+1. General
+2. Typography
+3. Grid
+4. Components
+5. Blog
+6. 404
+7. Shop
+8. Navigation
+9. Footer
+10. Sidebar
+11. Responsive
+12. Spacings
+13. Helper Classes
+
+/*-------------------------------------------------------*/
+
+
+/*-------------------------------------------------------*/
+/* General
+/*-------------------------------------------------------*/
+
+.clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+::selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $body-font;
+  font-size: 15px;
+  line-height: 1.5;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  background: #fff;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: $text-color;
+
+  img {
+    border: none;
+    max-width: 100%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  margin: 0;
+  border-color: $border-color;
+}
+
+
+/*-------------------------------------------------------*/
+/* Preloader
+/*-------------------------------------------------------*/
+
+.loader-mask {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; 
+  z-index:99999;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 5px;
+  width: 5em;
+  height: 5em;
+  margin:-25px 0 0 -25px;
+  text-indent: -9999em;
+  border-top: 0.5em solid rgba(25,25,25,1);
+  border-right: 0.5em solid rgba(245,245,245,.5);
+  border-bottom: 0.5em solid rgba(245,245,245,.5);
+  border-left: 0.5em solid rgba(245,245,245,.5);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+@-webkit-keyframes load8 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }}
+@keyframes load8 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }}
+
+
+/* Scroll Down icon
+-------------------------------------------------------*/
+
+.scroll-down {
+  font-size: 16px;
+  width: 23px;
+  height: 34px;
+  text-align: center;
+  line-height: 38px;
+  z-index: 50;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -12px;
+  border-radius: 11px;
+  border: 2px solid #fff;
+  z-index: 50;
+
+  &:before {
+    content: '';
+    position: relative;
+    top: 6px;
+    left: 8px;
+    display: block;
+    width: 3px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+}
+
+
+/* Section Dark / Background Image
+-------------------------------------------------------*/
+
+.bg-img,
+.bg-video,
+.bg-dark,
+.bg-color {
+  h1,h2,h3,h4,h5,h6,
+  .hero__subtitle,
+  .entry__meta li,
+  .entry__meta li a,
+  .counter__timer,
+  .counter__text,
+  &.promo-section p,
+  .promo-section__features,
+  .call-to-action__text,
+  address,
+  .contact-item__phone,
+  .contact-item__email,
+  .contact-item__title {
+    color: #fff;
+  }  
+}
+
+.bg-dark,
+.bg-video,
+.bg-img,
+.bg-color {
+
+  .progress__bar {
+    background-color: #fff;
+  }
+
+  .progress__base {
+    background-color: rgba(#fff,.3);
+  }
+}
+
+
+/* Bottom Gradient
+-------------------------------------------------------*/
+
+.bottom-gradient {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  @include linear-gradient-from-bottom(rgba(#000, .75), transparent);
+}
+
+
+/* Section Dividers
+-------------------------------------------------------*/
+.top-divider {
+  border-top: 1px solid $border-color;
+}

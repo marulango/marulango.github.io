@@ -1,0 +1,248 @@
+/*-------------------------------------------------------*/
+/* Buttons
+/*-------------------------------------------------------*/
+
+.section-buttons .btn {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  font-family: $heading-font;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+  border-radius: 5px;
+  @include transition ($all);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  
+
+  &:hover {
+    @include transition ($all);
+    color: #fff;
+  }
+
+  &:hover span,
+  &:focus {
+    color: #fff;
+  }
+
+  span {
+    position: relative;
+    z-index: 3;
+    @include transition (color .3s ease-in-out);
+    color: #fff;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+
+    &.btn--lg span {
+      line-height: 44px;
+    }
+
+    &.btn--md span {
+      line-height: 36px;
+    }
+
+    &.btn--sm span {
+      line-height: 30px;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      border-color: transparent;
+    }
+  }
+
+  &--white {
+    box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, .05 );
+    background-color: #fff;
+
+    span {
+      color: $bg-dark;
+    }
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &--stroke {
+    background-color: transparent;
+    border: 2px solid $border-color;
+
+    span {
+      color: $bg-dark;
+    }
+
+    &.btn--lg span {
+      line-height: 44px;
+    }
+
+    &.btn--md span {
+      line-height: 36px;
+    }
+
+    &.btn--sm span {
+      line-height: 30px;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      border-color: transparent;
+    }
+  }
+
+  &--stroke-blue {
+    border-color: $main-color;
+  }
+
+  &--color {
+    background-color: $main-color;
+
+    &:hover {
+      background-color: $bg-dark;
+    }
+  }
+
+  &--gradient {
+    @include linear-gradient-from-bottom(#4193d6, $main-color);
+
+    &:hover {
+      opacity: .95;
+    }
+  }
+
+  &--dark {
+    background-color: $bg-dark;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &--light {    
+    background-color: #f5f5f5;
+
+    span {
+      color: $heading-color;
+    }
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--icon i {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: inherit;
+  }
+
+  &--icon.btn--md i {
+    font-size: 13px;
+  }
+
+  &--icon.btn--sm i {
+    font-size: 10px;
+  }
+}
+
+.btn--lg {
+  font-size: 15px;
+  padding: 0 35px;
+
+  span {
+    line-height: 48px;
+  }
+}
+
+.btn--md {
+  font-size: 14px;
+  padding: 0 22px;
+
+  span {
+    line-height: 40px;
+  }
+}
+
+.btn--sm {
+  font-size: 12px;
+  padding: 0 20px;
+
+  span {
+    line-height: 34px;
+  }
+}
+
+.rounded,
+.rounded:before {
+  border-radius: 70px;
+}
+
+
+/* Input Buttons
+-------------------------------------------------------*/
+
+.btn--button[type] {
+  border: none;
+  margin-bottom: 0;
+  width: auto;
+
+  &.btn--lg {
+    padding: 0 35px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  &.btn--md {
+    padding: 0 22px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  &.btn--sm {
+    padding: 0 20px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  &.btn--color,
+  &.btn--dark,
+  &.btn--gradient {
+    color: #fff;
+  }
+
+  &.btn--wide {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-dark;
+    color: #fff;
+  }
+}

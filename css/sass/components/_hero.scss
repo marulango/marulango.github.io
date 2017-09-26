@@ -1,0 +1,193 @@
+/*-------------------------------------------------------*/
+/* Hero
+/*-------------------------------------------------------*/
+
+.hero {
+  background-size: cover;
+  background-position: 50%;
+  height: 100%;
+  position: relative;
+
+  &__home {
+    background: transparent url('../img/hero/hero_index.jpg') top left 100%;
+    background-size: cover;
+  }
+
+  &__container {
+    height: 100%;
+  }  
+
+  @include bp-md-down {
+    &__container,
+    &__container--short,
+    &__container--medium {
+      height: 600px !important;
+    }
+  }
+
+  @include bp-sm-down {
+    &__container,
+    &__container--short,
+    &__container--medium {
+      height: auto !important;
+      padding: 60px 0;
+    }
+  }
+
+  &__container--tall {
+    height: 100% !important;
+  }
+
+  &__container--short {
+    height: 700px;
+  }
+
+  &__container--medium {
+    height: 850px;
+  }
+
+  &__outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 5;
+
+    @include bp-sm-down {
+      padding: 0 15px;
+    }
+  }
+
+  &__inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__inner--bottom {
+    vertical-align: bottom;
+  }
+
+  &__inner--top {
+    vertical-align: top;
+    margin-top: 182px;
+    display: block;
+
+    @include bp-md-down {
+      margin-top: 100px;
+    }
+
+    @include bp-sm-down {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    @include bp-sm-down {
+      font-size: 40px;
+    }
+
+    @include bp-xs-down {
+      font-size: 28px;
+    }
+  }
+
+  &__title--sm {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 170px;
+
+    @include bp-sm-down {
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    @include bp-xs-down {
+      font-size: 24px;
+    }
+  }
+
+  &__title--lg {
+    font-size: 70px;
+
+    @include bp-sm-down {
+      font-size: 55px;
+    }
+
+    @include bp-xs-down {
+      font-size: 36px;
+    }
+  }
+
+  &--boxed {
+    max-width: 570px;
+  }
+
+  &--boxed--md {
+    max-width: 670px;
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+
+  &__subtitle--uppercase {
+    font-size: 20px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+/* Video Background
+-------------------------------------------------------*/
+iframe {
+  border: 0;
+}
+
+.ytplayer-player {
+  position: absolute;
+}
+
+.video-cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(#000,.2);
+}
+
+#video-container {
+  position: static !important;
+}
+
+#controlBar_video-container {
+  display: none !important;
+}
+
+.mobile .mbYTP_wrapper {
+  z-index: -1 !important;
+}

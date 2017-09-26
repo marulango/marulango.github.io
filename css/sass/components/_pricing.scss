@@ -1,0 +1,87 @@
+/*-------------------------------------------------------*/
+/* Pricing Tables
+/*-------------------------------------------------------*/
+
+.pricing-table {
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+  padding: 70px 60px 85px;
+  margin-bottom: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  border: 1px solid lighten($border-color, 3%);
+
+  @include bp-xs-down {
+    padding: 50px 20px 60px;
+  }
+
+  &--best {
+
+    .pricing-table__price,
+    .pricing-table__currency {
+      color: $main-color;
+    }
+  }
+
+  &__ribbon {
+    background-color: $main-color;
+    position: absolute;
+    padding: 9px 50px;
+    color: #fff;
+    left: -40px;
+    top: 30px;
+    font-family: $heading-font;
+    @include transform(rotate(-45deg));
+    @include linear-gradient(#4193d6, $main-color);
+  }
+
+  &__icon {
+    display: block;
+    font-size: 56px;
+    color: $text-color;
+  }
+  
+  &__title {
+    font-size: 20px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__price-box {
+    padding: 0 0 30px;
+    color: $heading-color;
+  }
+
+  &__currency {
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px 2px 0 0;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__price {
+    font-size: 56px;
+    font-weight: 300;
+  }
+
+  &__term {
+    font-size: 13px;
+    display: block;
+    color: $text-color;
+    font-family: $body-font;
+  }  
+
+  &__features {
+    color: $text-color;
+    font-size: 15px;
+    margin-top: 14px;
+    margin-bottom: 40px;
+
+    li {
+      padding: 12px 0;
+    }
+  }
+}

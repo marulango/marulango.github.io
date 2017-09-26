@@ -1,0 +1,303 @@
+/*-------------------------------------------------------*/
+/* Blog Standard
+/*-------------------------------------------------------*/
+
+.entry {
+  margin-bottom: 100px;
+  position: relative;
+
+  &__img-holder,
+  &__slider,
+  &__video {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+
+  &__slider .owl-carousel {
+    border-radius: 5px;
+  }
+
+  &__img {
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  &__title {
+    font-size: 34px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+
+    a:hover {
+      color: $main-color;
+    }
+
+    @include bp-sm-down {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+
+  &__title--sm {
+    font-size: 20px;
+  }
+
+  &__meta {
+    margin-bottom: 7px;
+
+    li {
+      color: $date-color;
+      font-size: 13px;
+      display: inline-block;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:after {
+        content: "/";
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  &__excerpt {
+    margin-top: 40px;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      margin-bottom: 22px;
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+
+.link-more i {
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 5px;
+} 
+
+  
+
+
+
+/* Quote Post
+-------------------------------------------------------*/
+.entry__blockquote {
+  position: relative;
+  margin: 0;
+  padding: 60px 100px;
+
+  @include bp-sm-down {
+    padding: 40px;
+  }
+
+  p {
+    margin-top: 10px; 
+  }
+
+  p a {
+    color: $text-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+
+/* Video Post
+-------------------------------------------------------*/
+.entry-video iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+}
+
+
+/*-------------------------------------------------------*/
+/* Pagination
+/*-------------------------------------------------------*/
+
+.pagination {
+  margin-top: 10px;
+
+  &__nav {
+    display: inline-block;
+  }
+
+  &__page {
+    font-family: $heading-font;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 3px;
+    text-align: center;
+    color: $heading-color;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: $bg-light;
+    @include transition ($all);
+
+    i {
+      font-size: 12px;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+
+  &__page:not(span):hover {
+    background-color: $main-color;
+    border-color: transparent;
+    color: #fff;    
+  }
+}
+
+
+
+/*-------------------------------------------------------*/
+/* Blog Single
+/*-------------------------------------------------------*/
+
+.blog__single .entry {
+  margin-bottom: 0;
+}
+
+.entry__article p {
+  margin: 30px 0;
+}
+
+.entry__article blockquote p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Author
+/*-------------------------------------------------------*/
+.entry-author {
+  padding: 50px 30px;
+  position: relative;
+  margin-bottom: 100px;
+  background-color: #fafafa;
+  border-radius: 5px;
+
+  &__img {
+    display: block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+
+    @include bp-xs-down {
+      width: 40px;
+    }
+  }
+
+  &__name {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    margin-bottom: 20px;
+    font-family: $heading-font;
+  }
+
+  &__position {
+    font-size: 13px;
+    margin: 5px 0 10px;
+    display: inline-block;
+  }
+}
+
+
+/* Comments
+/*-------------------------------------------------------*/
+
+.entry-comments {
+
+  &__list,
+  &__reply {
+    list-style: none;
+  }
+
+  &__item {
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }  
+
+  &__body {
+    padding-left: 86px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    @include bp-xs-down {
+      padding-left: 60px;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+
+    @include bp-xs-down {
+      width: 40px;
+    }
+  }
+
+  &__author {
+    color: $heading-color;
+    font-size: 15px;
+    font-family: $heading-font;
+    letter-spacing: -0.04em;
+    display: block;
+    line-height: 1.2;
+  }
+
+  &__time {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+  span a {
+    font-size: 12px;
+    color: $text-color;
+  }
+
+  @include bp-xs-up {
+    &__reply {
+      padding-left: 10%;
+    }
+  }
+  
+}
+
+
+/* Comment Form
+/*-------------------------------------------------------*/
+
+.comment-form input[type] {
+  margin-bottom: 20px;
+}

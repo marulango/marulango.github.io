@@ -1,5 +1,8 @@
 config.codekit
+config.codekit3
 node_modules/
 bower.json
 .sass-cache/
 *.scssc
+*.db
+.DS_Store

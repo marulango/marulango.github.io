@@ -1,0 +1,60 @@
+/*-------------------------------------------------------*/
+/* Tabs
+/*-------------------------------------------------------*/
+
+.tabs {
+
+  &__list {
+    margin-bottom: -1px;
+  }
+
+  &__list__item {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: $heading-font;
+    color: $heading-color;
+    letter-spacing: -0.04em;
+    margin-right: 3px;
+
+    @include bp-xs-down {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    padding: 11px 20px 10px;
+    background-color: $bg-light;
+    border: 1px solid $border-color;
+    color: $heading-color;
+    @include transition (background-color .1s ease-in-out);
+
+    &:focus {
+      color: inherit;
+    }
+  }
+
+  &__list__item.active .tabs__link {
+    background-color: $main-color;
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.tabs__content {
+  padding: 30px 0;
+  overflow: hidden;
+
+  &__pane {
+    display: none;
+  }
+
+  &__pane.active {
+    display: block;
+  }
+}

@@ -1,0 +1,48 @@
+/*-------------------------------------------------------*/
+/* Promo Section
+/*-------------------------------------------------------*/
+
+.promo-section {
+
+  &__title {
+    margin-bottom: 25px;
+    margin-top: 50px;
+
+    @include bp-lg-down {
+      margin-top: 15px;
+    }
+
+    @include bp-md-down {
+      margin-top: 30px;
+    }
+  }
+
+  &__title--lg {
+    font-size: 42px;
+
+    @media (max-width: 1500px) {
+      font-size: 36px;
+      margin-top: 0;
+    }
+
+    @include bp-sm-down {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+  }
+
+  &__features {
+    line-height: 30px;
+    list-style: none;
+  }
+
+  &__features__icon {
+    color: #96e46c;
+    margin-right: 15px;
+  }
+
+  &__img {
+    border-radius: 5px;
+    width: 100%;
+  }
+}

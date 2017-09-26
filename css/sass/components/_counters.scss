@@ -1,0 +1,36 @@
+/*-------------------------------------------------------*/
+/* Counters
+/*-------------------------------------------------------*/
+
+.counter {
+
+  &__timer {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.2;
+    color: $heading-color;
+  }
+
+  &__timer--lg {
+    font-size: 64px;
+
+    @include bp-xs-down {
+      font-size: 50px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: $text-color;
+    font-family: $heading-font;
+    text-transform: uppercase;
+  }
+
+  &__plus:after {
+    content: "+";
+    display: inline-block;
+  }
+
+}

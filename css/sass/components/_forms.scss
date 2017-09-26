@@ -1,0 +1,165 @@
+/*-------------------------------------------------------*/
+/* Form Elements
+/*-------------------------------------------------------*/
+
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type],
+select,
+textarea {
+  height: 40px;
+  background-color: $bg-light;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  margin-bottom: 21px;
+  font-size: 15px;
+  padding: 0 16px;
+  box-shadow: none;  
+  border-radius: 5px;
+  @include transition ($all);
+}
+
+textarea {
+  height: auto;
+  padding: 8px 16px;
+}
+
+
+input[type]:focus,
+textarea:focus {
+  border-color: $main-color;
+  background-color: #fff;
+  outline: none;
+  box-shadow: none !important;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+  -webkit-appearance: none;
+}
+
+/* Change Color of Placeholders */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $text-color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $text-color;
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $text-color;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: $text-color;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding-left: 12px;
+  background-image: url(../img/dropdown.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/* Checkboxes & Radio Buttons
+-------------------------------------------------------*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  width: 18px;
+  height: 18px;
+  background-color: #f4f4f4;
+  content: "";
+  display: inline-block;
+  font-size: 13px;
+  margin: -4px 12px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid $border-color;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\e80a";
+  font-family: "ui-icons";
+  color: $heading-color;
+  font-size: 9px;
+  line-height: 16px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  margin-bottom: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  color: $heading-color;
+  font-size: 15px;
+}
+
+.radio > li,
+.checkbox > li {
+  padding: 7px 0;
+  list-style: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #f4f4f4;
+  border: 1px solid $border-color;
+  border-radius: 40px;
+  margin: -3px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+input[type="radio"]:checked + label:before  {
+  background-color: $bg-dark;
+  border: 5px solid darken($bg-light, 3%);
+  padding: 1px;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+label {
+  color: $heading-color;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 400;
+  margin-bottom: 7px;
+}

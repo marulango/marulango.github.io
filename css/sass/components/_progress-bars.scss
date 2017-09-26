@@ -1,0 +1,44 @@
+/*-------------------------------------------------------*/
+/* Progress Bars
+/*-------------------------------------------------------*/
+
+.progress {
+  margin-bottom: 30px;
+
+  &__bar {
+    @include transition (width 2s cubic-bezier(0.86, 0, 0.07, 1));
+    box-shadow: none;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    width: 0%;
+    position: relative;
+    background-color: $heading-color;
+  }
+
+
+  &__title {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+
+  &__percent {
+    font-size: 18px;
+    float: right;
+  }
+
+  &__base { 
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    background: #e8e8e8;
+    margin-bottom: 38px;
+    box-shadow: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+

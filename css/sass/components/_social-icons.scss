@@ -1,0 +1,96 @@
+/*-------------------------------------------------------*/
+/* Social Icons
+/*-------------------------------------------------------*/
+
+.social-icons {
+  a {
+    margin: 0 10px 6px 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: $text-color;
+    background-color: $bg-light;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    @include transition ($all);
+    border-radius: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+  }
+
+  &--dark a {
+    background-color: #252525;
+    color: $text-color;
+  }
+
+  &--nobase a {
+    width: auto;
+    height: auto;
+    line-height: 1;
+    margin-right: 24px;
+    background-color: transparent;
+    color: $text-color;
+
+    &:hover {
+      background-color: transparent !important;
+      color: #fff;
+    }
+  }
+
+  &--nobase-dark a {
+    &:hover {
+      color: $heading-color;
+    }
+  }
+
+  &--white a {
+    color: #fff;
+
+    &:hover {
+      color: rgba(255,255,255,.8);
+    }
+  }
+
+  &--transparent a {
+    background-color: rgba(255,255,255,.2);
+    color: #fff;
+  }
+
+  &--buttons a {
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 16px;
+    margin-right: 5px;
+    color: #fff;
+    font-family: $heading-font;
+    font-size: 14px;
+    border-radius: 5px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &__facebook {
+    background-color: #3a579a !important;
+  }
+
+  &__twitter {
+    background-color: #00abf0 !important;
+  }
+}
+
+.rounded a {
+  border-radius: 50%;
+}

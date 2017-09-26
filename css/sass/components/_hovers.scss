@@ -1,0 +1,74 @@
+/*-------------------------------------------------------*/
+/* Hovers
+/*-------------------------------------------------------*/
+
+.hover-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  @include transition ($all);
+
+  &.light {
+    background-color: rgba(255,255,255,.9);
+  }
+}
+
+.hover-trigger:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-overlay="1"] {
+  background-color: rgba(25,25,25,.1);
+}
+
+[data-overlay="2"] {
+  background-color: rgba(25,25,25,.2);
+}
+
+[data-overlay="3"] {
+  background-color: rgba(25,25,25,.3);
+}
+
+[data-overlay="4"] {
+  background-color: rgba(25,25,25,.4);
+}
+
+[data-overlay="5"] {
+  background-color: rgba(25,25,25,.5);
+}
+
+[data-overlay="6"] {
+  background-color: rgba(25,25,25,.6);
+}
+
+[data-overlay="7"] {
+  background-color: rgba(25,25,25,.7);
+}
+
+[data-overlay="8"] {
+  background-color: rgba(25,25,25,.8);
+}
+
+[data-overlay="9"] {
+  background-color: rgba(25,25,25,.9);
+}
+
+[data-overlay="10"] {
+  background-color: rgba(25,25,25,1);
+}
+
+
+/* Hover Scale
+-------------------------------------------------------*/
+.hover-scale img {
+  @include transition (.3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+}
+
+.hover-scale:hover img {
+  @include transform (scale(1.1,1.1));
+}
