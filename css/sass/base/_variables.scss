@@ -1,5 +1,5 @@
 // Colors
-$text-color: #a4a5ad;
+$text-color: #696a70;
 $link-color: #59b3ff;
 $heading-color: #212121;
 $nav-color: #292b32;
@@ -13,9 +13,39 @@ $date-color: #ababab;
 
 
 // Fonts
-$body-font: 'Lato', sans-serif;
-$heading-font: 'Karla', sans-serif;
-$alt-font: 'Merriweather', serif;
+$body-font: 'Neuzeit Office W04', sans-serif;
+$heading-font: 'Neuzeit Office W04 Bold', sans-serif;
+$alt-font: 'Neuzeit Office W04', serif;
+
+
+@font-face{
+    font-family:"Neuzeit Office W04";
+    src:url("../fonts/847eaeb0-9432-4255-8c1c-3ca8498cc416.eot?#iefix");
+    src:url("../fonts/847eaeb0-9432-4255-8c1c-3ca8498cc416.eot?#iefix") format("eot"),url("../fonts/0091434f-7ef9-49ac-8eef-473a8391bdb2.woff2") format("woff2"),url("../fonts/83a184bd-c35e-4d52-bb25-78baa11414cd.woff") format("woff"),url("../fonts/59e024e3-c765-4222-bb77-1277ca05a51e.ttf") format("truetype"),url("../fonts/ce76b5c4-7978-46c6-a90d-fe4fdd8862c7.svg#ce76b5c4-7978-46c6-a90d-fe4fdd8862c7") format("svg");
+    font-weight: '500';
+    font-style: normal;
+}
+@font-face{
+    font-family:"Neuzeit Office W04";
+    src:url("../fonts/27425558-7a63-40fe-83d2-dc09cb75e23c.eot?#iefix");
+    src:url("../fonts/27425558-7a63-40fe-83d2-dc09cb75e23c.eot?#iefix") format("eot"),url("../fonts/fd7c6fd4-591e-4c26-a002-b9682ea45e81.woff2") format("woff2"),url("../fonts/2720e08f-b33d-4f91-b7b0-e27d2225fc8c.woff") format("woff"),url("../fonts/1b8d7f23-c5ce-4d35-9fc7-4321ff29eb63.ttf") format("truetype"),url("../fonts/221c3813-dc8d-4725-bb94-4c88c3450482.svg#221c3813-dc8d-4725-bb94-4c88c3450482") format("svg");
+    font-weight: '500';
+    font-style: italic;
+}
+@font-face{
+    font-family:"Neuzeit Office W04 Bold";
+    src:url("../fonts/90b77ab5-2c2a-4574-b962-85c80aeb208c.eot?#iefix");
+    src:url("../fonts/90b77ab5-2c2a-4574-b962-85c80aeb208c.eot?#iefix") format("eot"),url("../fonts/3db97e85-bac9-4a3d-846f-64d8aebeb0fd.woff2") format("woff2"),url("../fonts/df712007-9a0c-4968-943d-88c2310f9047.woff") format("woff"),url("../fonts/6774e06f-b2bd-448c-8018-34f7cc13c1b3.ttf") format("truetype"),url("../fonts/2598dce9-53a4-466b-bf99-cb784581a496.svg#2598dce9-53a4-466b-bf99-cb784581a496") format("svg");
+    font-weight: '700';
+    font-style: normal;
+}
+@font-face{
+    font-family:"Neuzeit Office W04 Bold";
+    src:url("../fonts/decb8c85-816b-4068-b00d-8c1b9e8e4549.eot?#iefix");
+    src:url("../fonts/decb8c85-816b-4068-b00d-8c1b9e8e4549.eot?#iefix") format("eot"),url("../fonts/0da1e662-7da5-4c87-85b3-34ed092fe4e0.woff2") format("woff2"),url("../fonts/2a708f21-ba14-48cc-a648-555b4cf85656.woff") format("woff"),url("../fonts/0917a945-bbf8-442a-9f07-375bb25880d6.ttf") format("truetype"),url("../fonts/176ff362-08dc-4a65-bea1-992761289e21.svg#176ff362-08dc-4a65-bea1-992761289e21") format("svg");
+    font-weight: '700';
+    font-style: italic;
+}
 
 
 // Navbar

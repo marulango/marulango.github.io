@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Neuzeit Office W04";
+  src: url("../fonts/847eaeb0-9432-4255-8c1c-3ca8498cc416.eot?#iefix");
+  src: url("../fonts/847eaeb0-9432-4255-8c1c-3ca8498cc416.eot?#iefix") format("eot"), url("../fonts/0091434f-7ef9-49ac-8eef-473a8391bdb2.woff2") format("woff2"), url("../fonts/83a184bd-c35e-4d52-bb25-78baa11414cd.woff") format("woff"), url("../fonts/59e024e3-c765-4222-bb77-1277ca05a51e.ttf") format("truetype"), url("../fonts/ce76b5c4-7978-46c6-a90d-fe4fdd8862c7.svg#ce76b5c4-7978-46c6-a90d-fe4fdd8862c7") format("svg");
+  font-weight: '500';
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neuzeit Office W04";
+  src: url("../fonts/27425558-7a63-40fe-83d2-dc09cb75e23c.eot?#iefix");
+  src: url("../fonts/27425558-7a63-40fe-83d2-dc09cb75e23c.eot?#iefix") format("eot"), url("../fonts/fd7c6fd4-591e-4c26-a002-b9682ea45e81.woff2") format("woff2"), url("../fonts/2720e08f-b33d-4f91-b7b0-e27d2225fc8c.woff") format("woff"), url("../fonts/1b8d7f23-c5ce-4d35-9fc7-4321ff29eb63.ttf") format("truetype"), url("../fonts/221c3813-dc8d-4725-bb94-4c88c3450482.svg#221c3813-dc8d-4725-bb94-4c88c3450482") format("svg");
+  font-weight: '500';
+  font-style: italic; }
+
+@font-face {
+  font-family: "Neuzeit Office W04 Bold";
+  src: url("../fonts/90b77ab5-2c2a-4574-b962-85c80aeb208c.eot?#iefix");
+  src: url("../fonts/90b77ab5-2c2a-4574-b962-85c80aeb208c.eot?#iefix") format("eot"), url("../fonts/3db97e85-bac9-4a3d-846f-64d8aebeb0fd.woff2") format("woff2"), url("../fonts/df712007-9a0c-4968-943d-88c2310f9047.woff") format("woff"), url("../fonts/6774e06f-b2bd-448c-8018-34f7cc13c1b3.ttf") format("truetype"), url("../fonts/2598dce9-53a4-466b-bf99-cb784581a496.svg#2598dce9-53a4-466b-bf99-cb784581a496") format("svg");
+  font-weight: '700';
+  font-style: normal; }
+
+@font-face {
+  font-family: "Neuzeit Office W04 Bold";
+  src: url("../fonts/decb8c85-816b-4068-b00d-8c1b9e8e4549.eot?#iefix");
+  src: url("../fonts/decb8c85-816b-4068-b00d-8c1b9e8e4549.eot?#iefix") format("eot"), url("../fonts/0da1e662-7da5-4c87-85b3-34ed092fe4e0.woff2") format("woff2"), url("../fonts/2a708f21-ba14-48cc-a648-555b4cf85656.woff") format("woff"), url("../fonts/0917a945-bbf8-442a-9f07-375bb25880d6.ttf") format("truetype"), url("../fonts/176ff362-08dc-4a65-bea1-992761289e21.svg#176ff362-08dc-4a65-bea1-992761289e21") format("svg");
+  font-weight: '700';
+  font-style: italic; }
+
 /*-------------------------------------------------------*/
 /* Table of Content
 
@@ -46,7 +74,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Neuzeit Office W04", sans-serif;
   font-size: 15px;
   line-height: 1.5;
   font-smoothing: antialiased;
@@ -56,7 +84,7 @@ body {
   outline: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  color: #a4a5ad; }
+  color: #696a70; }
   body img {
     border: none;
     max-width: 100%;
@@ -275,7 +303,7 @@ ul, ol {
   list-style-position: inside; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   margin-top: 0;
   margin-bottom: 10px;
   color: #212121;
@@ -381,10 +409,9 @@ a {
     text-decoration: none; }
 
 p {
-  font-size: 15px;
-  color: #a4a5ad;
-  font-weight: 400;
-  line-height: 26px;
+  font-size: 16px;
+  color: #696a70;
+  line-height: 25px;
   margin: 0 0 10px; }
 
 .lead {
@@ -452,12 +479,12 @@ blockquote {
     font-size: 22px;
     line-height: 34px;
     font-style: italic;
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     margin-bottom: 10px;
     letter-spacing: -0.04em;
     position: relative; }
   blockquote span {
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     letter-spacing: -0.04em;
     color: #212121;
     font-size: 14px; }
@@ -466,7 +493,7 @@ blockquote {
 -------------------------------------------------------*/
 .dropcap {
   float: left;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   color: #FFA6A5;
   font-size: 56px;
   line-height: 48px;
@@ -716,7 +743,7 @@ blockquote {
     top: 22px;
     position: absolute; }
   .accordion-panel__heading > a.plus > span {
-    background-color: #a4a5ad; }
+    background-color: #696a70; }
   .accordion-panel__heading > a.plus > span:after {
     content: "";
     display: block;
@@ -724,7 +751,7 @@ blockquote {
     height: 2px;
     position: absolute;
     top: 0;
-    background-color: #a4a5ad;
+    background-color: #696a70;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -742,7 +769,7 @@ blockquote {
   display: block;
   position: relative;
   padding: 11px 20px;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   color: #212121;
   font-size: 15px;
   letter-spacing: -0.04em;
@@ -765,7 +792,7 @@ blockquote {
     content: "\e802";
     right: 0;
     top: 12px;
-    color: #a4a5ad;
+    color: #696a70;
     font-size: 18px; }
   .toggle-panel > a.active:after {
     content: "\e809";
@@ -838,7 +865,7 @@ blockquote {
 .btn {
   display: inline-block;
   font-weight: 700;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   letter-spacing: -0.04em;
   text-decoration: none;
   text-align: center;
@@ -1054,8 +1081,8 @@ blockquote {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #a4a5ad;
-  font-family: "Karla", sans-serif;
+  color: #696a70;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   text-transform: uppercase; }
 
 .counter__plus:after {
@@ -1216,21 +1243,21 @@ textarea {
 /* Change Color of Placeholders */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #a4a5ad; }
+  color: #696a70; }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #a4a5ad;
+  color: #696a70;
   opacity: 1; }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #a4a5ad;
+  color: #696a70;
   opacity: 1; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #a4a5ad; }
+  color: #696a70; }
 
 select {
   -webkit-appearance: none;
@@ -1579,7 +1606,7 @@ iframe {
     font-size: inherit;
     margin-bottom: 0; }
   .contact-item__phone {
-    color: #a4a5ad; }
+    color: #696a70; }
   .contact-item__title {
     color: #212121; }
 
@@ -1637,7 +1664,7 @@ iframe {
   .map-info__contact-item {
     margin-top: 23px; }
   .map-info__phone {
-    color: #a4a5ad; }
+    color: #696a70; }
   .map-info__title {
     font-size: 20px;
     margin-bottom: 7px; }
@@ -1889,7 +1916,7 @@ iframe {
 /*-------------------------------------------------------*/
 .page-title {
   position: relative;
-  height: 680px;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
   display: block;
@@ -1978,7 +2005,7 @@ iframe {
   font-size: 18px; }
   .portfolio-filter a {
     display: inline-block;
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     padding: 0 12px;
     color: #212121;
     letter-spacing: -0.04em; }
@@ -2030,9 +2057,9 @@ iframe {
     .work-item__title a:hover {
       color: #FFA6A5; }
   .work-item__text {
-    color: #a4a5ad; }
+    color: #696a70; }
   .work-item__category {
-    color: #a4a5ad;
+    color: #696a70;
     font-size: 13px; }
     .work-item__category a {
       color: inherit; }
@@ -2110,7 +2137,7 @@ iframe {
   .project__meta__label, .project__meta__value {
     display: table-cell; }
   .project__meta__label {
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     letter-spacing: -0.04em;
     min-width: 100px;
     color: #212121; }
@@ -2124,7 +2151,7 @@ iframe {
   .project-nav .row > div {
     position: relative; }
   .project-nav__item {
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     color: #212121;
     font-size: 14px;
     line-height: 20px;
@@ -2238,7 +2265,7 @@ iframe {
     color: #fff;
     left: -40px;
     top: 30px;
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -2263,7 +2290,7 @@ iframe {
   .pricing-table__icon {
     display: block;
     font-size: 56px;
-    color: #a4a5ad; }
+    color: #696a70; }
   .pricing-table__title {
     font-size: 20px;
     margin-top: 22px;
@@ -2283,10 +2310,10 @@ iframe {
   .pricing-table__term {
     font-size: 13px;
     display: block;
-    color: #a4a5ad;
-    font-family: "Lato", sans-serif; }
+    color: #696a70;
+    font-family: "Neuzeit Office W04", sans-serif; }
   .pricing-table__features {
-    color: #a4a5ad;
+    color: #696a70;
     font-size: 15px;
     margin-top: 14px;
     margin-bottom: 40px; }
@@ -2398,7 +2425,7 @@ iframe {
     width: 10px;
     height: 10px;
     opacity: 0.7;
-    background: rgba(164, 165, 173, 0.5);
+    background: rgba(105, 106, 112, 0.5);
     z-index: 100;
     border-radius: 50%;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2454,12 +2481,12 @@ iframe {
   .owl-next:hover {
     opacity: 0.8;
     background-color: rgba(255, 255, 255, 0.3);
-    color: #a4a5ad; }
+    color: #696a70; }
 
 .owl-prev i,
 .owl-next i {
   font-size: 46px;
-  color: #a4a5ad;
+  color: #696a70;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase; }
@@ -2481,7 +2508,7 @@ iframe {
   display: inline-block;
   width: 40px;
   height: 40px;
-  color: #a4a5ad;
+  color: #696a70;
   background-color: #fafafa;
   line-height: 40px;
   text-align: center;
@@ -2502,7 +2529,7 @@ iframe {
 
 .social-icons--dark a {
   background-color: #252525;
-  color: #a4a5ad; }
+  color: #696a70; }
 
 .social-icons--nobase a {
   width: auto;
@@ -2510,7 +2537,7 @@ iframe {
   line-height: 1;
   margin-right: 24px;
   background-color: transparent;
-  color: #a4a5ad; }
+  color: #696a70; }
   .social-icons--nobase a:hover {
     background-color: transparent !important;
     color: #fff; }
@@ -2534,7 +2561,7 @@ iframe {
   padding: 0 16px;
   margin-right: 5px;
   color: #fff;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   font-size: 14px;
   border-radius: 5px; }
   .social-icons--buttons a i {
@@ -2579,7 +2606,7 @@ th {
 .table thead tr th {
   font-size: 12px;
   color: #212121;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.05em; }
@@ -2610,7 +2637,7 @@ th {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   color: #212121;
   letter-spacing: -0.04em;
   margin-right: 3px; }
@@ -2729,7 +2756,7 @@ th {
     margin-right: 7px;
     color: #212121; }
     .bg-dark .testimonial__author {
-      color: #a4a5ad; }
+      color: #696a70; }
   .testimonial__img {
     border-radius: 50%;
     margin-bottom: 18px;
@@ -2850,7 +2877,7 @@ th {
   .entry__blockquote p {
     margin-top: 10px; }
   .entry__blockquote p a {
-    color: #a4a5ad; }
+    color: #696a70; }
     .entry__blockquote p a:hover {
       color: #FFA6A5; }
 
@@ -2869,7 +2896,7 @@ th {
   .pagination__nav {
     display: inline-block; }
   .pagination__page {
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     font-size: 14px;
     display: inline-block;
     float: left;
@@ -2932,7 +2959,7 @@ th {
     font-size: 18px;
     letter-spacing: -0.04em;
     margin-bottom: 20px;
-    font-family: "Karla", sans-serif; }
+    font-family: "Neuzeit Office W04 Bold", sans-serif; }
   .entry-author__position {
     font-size: 13px;
     margin: 5px 0 10px;
@@ -2966,7 +2993,7 @@ th {
 .entry-comments__author {
   color: #212121;
   font-size: 15px;
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   letter-spacing: -0.04em;
   display: block;
   line-height: 1.2; }
@@ -2977,7 +3004,7 @@ th {
 
 .entry-comments span a {
   font-size: 12px;
-  color: #a4a5ad; }
+  color: #696a70; }
 
 @media only screen and (min-width: 640px) {
   .entry-comments__reply {
@@ -3023,7 +3050,7 @@ th {
       .nav__holder.scrolling .nav__menu > li.flex-child {
         border-left: 1px solid rgba(144, 144, 144, 0.3); }
     .nav__menu > li > a {
-      font-family: "Karla", sans-serif;
+      font-family: "Neuzeit Office W04 Bold", sans-serif;
       font-weight: 400;
       color: #292b32;
       font-size: 15px;
@@ -3074,7 +3101,7 @@ th {
       transition: all 0.2s ease-in-out; }
       .nav__dropdown-menu > li > a,
       .nav__dropdown-submenu > .nav__dropdown-menu > li > a {
-        color: #a4a5ad;
+        color: #696a70;
         padding: 5px 30px;
         display: block; }
     .nav__dropdown-menu.hide-dropdown {
@@ -3098,7 +3125,7 @@ th {
         font-size: 8px;
         right: 20px;
         line-height: 21px;
-        color: #a4a5ad; }
+        color: #696a70; }
     .nav__dropdown-menu > li a:hover {
       color: #fff; }
     .nav__dropdown-trigger {
@@ -3325,7 +3352,7 @@ header .flex-child.flex-right {
   display: inline-block;
   padding-left: 30px; }
   .nav__phone__link {
-    font-family: "Karla", sans-serif; }
+    font-family: "Neuzeit Office W04 Bold", sans-serif; }
     .nav__holder.scrolling .nav__phone__link {
       color: #292b32; }
     .nav--transparent .nav__phone__link {
@@ -3494,7 +3521,7 @@ header .flex-child.flex-right {
     vertical-align: middle;
     position: relative;
     overflow: hidden;
-    font-family: "Karla", sans-serif;
+    font-family: "Neuzeit Office W04 Bold", sans-serif;
     font-size: 40px;
     letter-spacing: -0.02em;
     color: #fff;
@@ -3587,7 +3614,7 @@ body.nav--overlay-open {
       display: block;
       border-bottom: 1px solid #e8e8e8; }
     .nav__dropdown-menu a {
-      color: #a4a5ad; }
+      color: #696a70; }
       .nav__dropdown-menu a:hover {
         color: #000; }
     .nav__dropdown-menu > li > a {
@@ -3651,7 +3678,7 @@ body.nav--overlay-open {
   .footer__widgets .widget-title {
     font-size: 16px; }
   .footer__widgets a {
-    color: #a4a5ad; }
+    color: #696a70; }
     .footer__widgets a:hover {
       color: #212121; }
   @media only screen and (max-width: 991px) {
@@ -3694,7 +3721,7 @@ body.nav--overlay-open {
 /* Nav Links
 -------------------------------------------------------*/
 .footer__nav-links .list-inline li > a {
-  font-family: "Karla", sans-serif;
+  font-family: "Neuzeit Office W04 Bold", sans-serif;
   color: #fff;
   font-size: 15px; }
   .footer__nav-links .list-inline li > a:hover {
@@ -3851,7 +3878,7 @@ body.nav--overlay-open {
 /* Widget Categories
 -------------------------------------------------------*/
 .widget-categories li a {
-  color: #a4a5ad; }
+  color: #696a70; }
   .widget-categories li a:hover {
     color: #FFA6A5; }
 
@@ -3861,7 +3888,7 @@ body.nav--overlay-open {
 .widget-categories-count {
   right: 0;
   position: absolute;
-  color: #a4a5ad; }
+  color: #696a70; }
 
 /* Widget Filter by Price
 -------------------------------------------------------*/
@@ -3881,13 +3908,13 @@ body.nav--overlay-open {
 
 .widget-filter-by-price label {
   font-weight: normal;
-  font-family: "Lato", sans-serif;
+  font-family: "Neuzeit Office W04", sans-serif;
   line-height: 33px;
   margin-bottom: 0;
   font-size: 14px;
   text-transform: none;
   letter-spacing: normal;
-  color: #a4a5ad; }
+  color: #696a70; }
 
 .widget-filter-by-price .btn {
   float: right;
@@ -3967,8 +3994,8 @@ body.nav--overlay-open {
   font-size: 14px;
   margin-bottom: 1px;
   font-weight: normal;
-  font-family: "Lato", sans-serif;
-  color: #a4a5ad;
+  font-family: "Neuzeit Office W04", sans-serif;
+  color: #696a70;
   line-height: 1.5;
   text-transform: none;
   letter-spacing: normal; }
@@ -4007,7 +4034,7 @@ body.nav--overlay-open {
   line-height: 1;
   margin: 0 6px 6px 0;
   font-size: 12px;
-  color: #a4a5ad;
+  color: #696a70;
   background-color: #fafafa;
   display: inline-block;
   float: left;
