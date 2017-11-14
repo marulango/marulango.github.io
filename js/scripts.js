@@ -29,7 +29,6 @@
   var quote = [
     "I hate spoiled milk and I can make tortillas.",
     "I have an overweight cat, he loves cookies.",
-    "I play so much Final Fantasy XIV that even my boyfriend finds it annoying.",
     "I hate weak handshakes.",
     "My greatest fear is ruining my cereal bowl with spoiled milk.",
     "I'm a hufflepuff.",
