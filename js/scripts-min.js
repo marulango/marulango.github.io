@@ -23,6 +23,13 @@
   });
 
 
+  /* Random funny facts
+    -------------------------------------------------------*/
+
+  var quote = [];
+  console.log(quote)
+
+
   /* Detect Browser Size
   -------------------------------------------------------*/
   var minWidth;
@@ -164,77 +171,6 @@
   }
 
 
-
-
-
-
-  /* Tabs
-  -------------------------------------------------------*/
-  $('.tabs__link-trigger').on('click', function(e) {
-    var currentAttrValue = $(this).attr('href');
-    $('.tabs__content-trigger ' + currentAttrValue).stop().fadeIn(1000).siblings().hide();
-    $(this).parent('li').addClass('active').siblings().removeClass('active');
-    e.preventDefault();
-  });
-
-
-  /* Counters
-  -------------------------------------------------------*/
-  function initCounters() {
-    $('.counter').appear(function() {
-      $('.counter__timer').countTo({
-        speed: 4000,
-        refreshInterval: 60,
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals);
-        }
-      });      
-    });
-  }
- 
-
-  /* Owl Carousel
-  -------------------------------------------------------*/
-
-
-
-  /* Youtube Background Video
-  -------------------------------------------------------*/
-  $("#video-container").YTPlayer();
-
-
-  /* Lightbox popup
-  -------------------------------------------------------*/
-  $('.lightbox-img, .lightbox-video').magnificPopup({
-    callbacks: {
-      elementParse: function(item) {
-      if(item.el.context.className == 'lightbox-video') {
-          item.type = 'iframe';
-        } else {
-          item.type = 'image';
-        }
-      }
-    },
-    type: 'image',
-    closeBtnInside:false,
-    gallery: {
-      enabled:true
-    },
-    image: {
-      titleSrc: 'title',
-      verticalFit: true
-    }
-  });
-
-  // Single video lightbox
-  $('.single-video-lightbox').magnificPopup({
-    type: 'iframe',
-    closeBtnInside:false,
-    tLoading: 'Loading image #%curr%...'
-  });
-
-
-
   /* Full Height Container
   -------------------------------------------------------*/
   function containerFullHeight() {
@@ -247,39 +183,6 @@
       $(fullHeight).height($(window).height());
     }    
   }
-
-
-
-  /* Progress Bars
-  -------------------------------------------------------*/
-  $('#animated-bars').appear(function() {
-
-    function loadDaBars() {
-      $('.progress__base').each(function(index) {
-        var $this = $(this),
-        bar = $this.find('.progress__bar'),
-        barWidth = bar.attr('aria-valuenow');
-        setTimeout(function() {              
-          bar.css({"width": barWidth + '%'});
-        }, index * 200);
-      });
-    };
-    loadDaBars();
-    
-  });
-
-
-  
-  /* Accordion
-  -------------------------------------------------------*/
-  function toggleChevron(e) {
-    $(e.target)
-    .prev('.accordion-panel__heading')
-    .find("a")
-    .toggleClass('plus minus');
-  }
-  $('#accordion').on('hide.bs.collapse', toggleChevron);
-  $('#accordion').on('show.bs.collapse', toggleChevron);
 
 
   /* Toggle
@@ -388,41 +291,6 @@
       viewOffset: { top: 200, right: 0, bottom: 0, left: 0 }
     });
   }  
-
-
-  /* FitVIds
-  -------------------------------------------------------*/
-  $(".video-wrap").fitVids();
-
-
-  /* Contact Form
-  -------------------------------------------------------*/
-
-  var submitContact = $('#submit-message'),
-    message = $('#msg');
-
-  submitContact.on('click', function(e){
-    e.preventDefault();
-
-    var $this = $(this);
-    
-    $.ajax({
-      type: "POST",
-      url: 'contact.php',
-      dataType: 'json',
-      cache: false,
-      data: $('#contact-form').serialize(),
-      success: function(data) {
-
-        if(data.info !== 'error'){
-          $this.parents('form').find('input[type=text],input[type=email],textarea,select').filter(':visible').val('');
-          message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-        } else {
-          message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-        }
-      }
-    });
-  });
 
 
   /* Scroll to Top
