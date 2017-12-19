@@ -1362,6 +1362,8 @@ label {
   background-position: 50%;
   height: 100%;
   position: relative; }
+  .hero h4 {
+    text-shadow: 1px 1px 40px rgba(116, 87, 99, 0.4); }
   .hero__home {
     background: transparent url("../img/hero/hero_index.jpg") top left 100%;
     background-size: cover; }
@@ -1407,7 +1409,8 @@ label {
         margin-top: 0; } }
   .hero__title {
     font-size: 50px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 40px rgba(116, 87, 99, 0.4); }
     @media only screen and (max-width: 767px) {
       .hero__title {
         font-size: 40px; } }

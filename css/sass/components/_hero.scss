@@ -8,6 +8,10 @@
   height: 100%;
   position: relative;
 
+  & h4 {
+    text-shadow: 1px 1px 40px rgba(116, 87, 99, 0.4);
+  }
+
   &__home {
     background: transparent url('../img/hero/hero_index.jpg') top left 100%;
     background-size: cover;
@@ -85,6 +89,7 @@
   &__title {
     font-size: 50px;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 40px rgba(116, 87, 99, 0.4);
 
     @include bp-sm-down {
       font-size: 40px;
