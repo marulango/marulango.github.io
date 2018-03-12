@@ -1360,7 +1360,7 @@ label {
 .hero {
   background-size: cover;
   background-position: 50%;
-  height: 100%;
+  height: 50%;
   position: relative; }
   .hero h4 {
     text-shadow: 1px 1px 40px rgba(116, 87, 99, 0.4); }
@@ -1371,7 +1371,7 @@ label {
     height: 100%; }
   @media only screen and (max-width: 991px) {
     .hero__container, .hero__container--short, .hero__container--medium {
-      height: 600px !important; } }
+      height: 400px !important; } }
   @media only screen and (max-width: 767px) {
     .hero__container, .hero__container--short, .hero__container--medium {
       height: auto !important;
@@ -1379,9 +1379,9 @@ label {
   .hero__container--tall {
     height: 100% !important; }
   .hero__container--short {
-    height: 700px; }
+    height: 500px; }
   .hero__container--medium {
-    height: 850px; }
+    height: 550px; }
   .hero__outer {
     display: table;
     height: 100%;
