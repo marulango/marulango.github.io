@@ -22,25 +22,6 @@
 
   });
 
-
-  /* Random funny facts
-    -------------------------------------------------------*/
-  var quoteContainer = $("#quote")
-  var quote = [
-    "I hate spoiled milk and I can make tortillas.",
-    "I have an overweight cat, he loves cookies.",
-    "I hate weak handshakes.",
-    "My greatest fear is ruining my cereal bowl with spoiled milk.",
-    "I'm a hufflepuff.",
-    "My friends say I'm one of the few grown-ups that look OK wearing pig tails."
-  ];
-
-  var randomQuote = quote[Math.floor(Math.random()*quote.length)];
-
-  quoteContainer.append(randomQuote)
-
-
-
   /* Detect Browser Size
   -------------------------------------------------------*/
   var minWidth;
