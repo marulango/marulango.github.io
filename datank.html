@@ -1,259 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>MARU MARU | Datank </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>MARU MARU</title>
 
-  <meta charset="utf-8">
-  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-
-  <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <link rel="stylesheet" href="assets/css/urku.css">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" href="img/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
 
 </head>
+<body class="top-fixed">
+   <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <label for="mobile-menu">
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+    </label>
 
-<body>
-
- 
-
-  <main class="main-wrapper">
-
-    <!-- Navigation -->
-    <header class="nav nav--dark">
-
-      <div class="nav__holder" id="sticky-nav">
-        <div class="container-fluid container-semi-fluid">
-          <div class="flex-parent">
-
-            <div class="nav__header flex-child clearfix">
-              <!-- Logo -->
-              <div class="logo-wrap">
-                <a href="index.html" class="logo__link logo--left">
-                  <img class="logo logo--dark" src="img/logo_dark.svg" alt="logo">
-                  <img class="logo logo--light" src="img/logo_light.svg" alt="logo">
-                </a>
-              </div>
-
-              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-              </button>
-            </div> <!-- end nav-header -->
-
-            <nav id="navbar-collapse" class="nav__wrap flex-child flex-right nav__wrap collapse navbar-collapse">              
-              <ul class="nav__menu nav__menu--inline">
-
-                <li>
-                  <a href="index.html">Work</a>
-                </li>                
-
-
-
-                <li>
-                  <a href="https://www.twitter.com/marulango" target="_blank">Twitter</a>
-                </li>                
-
-                <li>
-                  <a href="https://www.dribbble.com/marulango" target="_blank">Dribbble</a>
-                </li>
-
-              </ul> <!-- end menu -->
-
-            </nav> <!-- end nav-wrap -->
-        
-          </div> <!-- end flex-parent -->
-        </div> <!-- end container -->
-
+    <div class="ae-container-fluid rk-topbar">
+      <div class="rk-logo"><a href="index.html"><img src="assets/img/logo_dark.svg" alt=""></a>
       </div>
-    </header> <!-- end navigation -->
+      <nav class="rk-navigation">
+        <ul class="rk-menu">
+          <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Portfolio</a></li>
+          <li class="rk-menu__item"><a href="mailto:hola@maruma.ru" class="rk-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
-    <div class="content-wrapper">
-
-      <!-- Page Title -->
-      <section class="page-title bg-img text-center" style="background-image: url(img/portfolio/datank-hero.jpg);">
-        <div class="container">
-          <div class="page-title__holder">
-            <div class="page-title__inner">
-              <h1 class="page-title__title">Datank.ai</h1>
-            </div>
-          </div>
+  <section class="ae-container-fluid ae-container-fluid--full">
+    <header class="rk-portfolio-cover item-inside-6">
+      <div class="item-inside__meta">
+        <h1 class="ae-u-bolder rk-portfolio-title ">Datank.ai</h1>
+        <p class="ae-theta rk-portfolio-category ">Branding</p>
+      </div>
+    </header>
+    <div class="ae-container-fluid">
+      <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+        <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
+          <h2 class="rk-portfolio-inner-title ">Crystal Clear Data Science</h2>
         </div>
-      </section> <!-- end page title -->
-
-      <!-- Portfolio Single -->
-      <section class="section-wrap">
-        <div class="container">
-          <div class="row">            
-
-            <div class="col-md-6 col-md-offset-1 project__description mb-md-40">
-              <p>Datank helps companies reach maturity in their Data so they can easily jump in the Big Data and Data Science bandwagons in order to get a better and more meaningful understanding of their businesses and customers. </p>
-            </div> <!-- project description -->
-
-            <div class="col-md-3 col-md-offset-1 project__details">       
-              <ul class="project__meta">
-                <li class="project__meta__item">
-                  <span class="project__meta__label">Date:</span>
-                  <span class="project__meta__value">12.2016 - 05.2017</span>
-                </li>
-                <li class="project__meta__item">
-                  <span class="project__meta__label">Category:</span>
-                  <span class="project__meta__value">Branding, UX/UI Design, FrontEnd</span>
-                </li>
-                <li class="project__meta__item">
-                  <span class="project__meta__label">Guidelines:</span>
-                  <a href="img/portfolio/single/datank/branding_guidelines.pdf" class="project__meta__value">Graphic Standards Manual</a>
-                </li> 
-                <li class="project__meta__item">
-                  <span class="project__meta__label">Live:</span>
-                  <a href="https://datank.ai" class="project__meta__value">https://datank.ai/</a>
-                </li>
-                              
-              </ul>
-            </div>
-
-          </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
+          <p class="rk-portfolio-inner-client ">
+            <span class="ae-lambda">Company:</span>
+            <span class="ae-u-bolder">Datank.ai</span>
+          </p>
+          <p class="au-underline rk-portfolio-inner-website">
+            <a href="https://datank.ai" class="ae-kappa">www.datank.ai</a>
+          </p>
+          <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">2016</p>
         </div>
+      </div>
+    </div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 mt-20">
-                <img src="img/portfolio/single/datank/1.png" alt="">
-              </div>
-              <div class="col-md-12 mt-20">
-                <img src="img/portfolio/single/datank/4.jpg" alt="">
-              </div>
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/5.jpg" alt="">
-                <img src="img/portfolio/single/datank/7.gif" alt="">
-                <img src="img/portfolio/single/datank/9.png" alt="">
-              </div>
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/6.jpg" alt="">
-              </div>
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/4.png" alt="">
-              </div>
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/3.png" alt="">
-              </div>
-              <div class="col-md-12 mt-20">
-                <img src="img/portfolio/single/datank/12.jpg" alt="">
-              </div>
-              <div class="col-md-12 mt-20">
-                <img src="img/portfolio/single/datank/2.jpg" alt="">
-              </div>
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/1.jpg" alt="">
-              </div> 
-              <div class="col-md-6 mt-20">
-                <img src="img/portfolio/single/datank/3.jpg" alt="">
-              </div>
-              <div class="col-md-12 mt-20">
-                <img src="img/portfolio/single/datank/8.jpg" alt="">
-              </div>
+    <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
 
-              
-            </div>
-          </div>
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-5">
+          <h4 class="ae-u-bolder">Brief</h4>
+          <p class="ae-eta">The starting point was an already existing logotype. However, brands are much more than just logos. Creating a brand that would stand out from a lot of competitors in an emerging market was the main goal.</p>
         </div>
-
-
-      <!-- Brief -->
-      <section class="section-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mb-md-30">
-              <h5>Brief</h5>
-              <p>The starting point was an already existing logotype. However, brands are much more than just logos. Creating a brand that would stand out from a lot of competitors in an emerging market was the main goal.</p>
-            </div>
-            <div class="col-md-6">
-              <h5>Solution</h5>
-              <p>Using typefaces that would contrast from the average rounded monotoriety of the web and bright neon colors proved to stand out from the rest, even when striped from color and auxiliary shapes. Simplicity for this brand proved to be useful and allowed for a great range of applications, while being approachable —something that many of the competitors don't reflect on their brand nor communication—</p>
-            </div>
-          </div>
+        <div class="ae-grid__item item-lg-5 item-lg--offset-1">
+          <h4 class="ae-u-bolder">Solution</h4>
+          <p class="ae-eta">Using typefaces that would contrast from the average rounded monotoriety of the web and bright neon colors proved to stand out from the rest, even when striped from color and auxiliary shapes. Simplicity for this brand proved to be useful and allowed for a great range of applications, while being approachable —something that many of the competitors don't reflect on their brand nor communication—</p>
         </div>
-      </section> <!-- end brief -->
-
-
-      <!-- Pagination -->
-      <div class="project-nav">
-        <div class="container">
-          <nav>
-            <div class="row">
-              <div class="project-nav__item project-nav__page-prev col-xs-4">
-                
-              </div>
-              <div class="project-nav__item project-nav__back-to-projects col-xs-4">
-                <a href="/index.html">All Projects</a>
-                <a href="#" class="project-nav__back-to-projects-icon"><i class="pe-7s-keypad"></i></a>
-              </div>
-              <div class="project-nav__item project-nav__page-next col-xs-4">
-                <a href="/ropensci.html">Next<i class="ui-arrow-right"></i></a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div> <!-- end pagination -->
-    
-
-      <!-- Footer -->
-      <footer class="footer bg-dark">
-        <div class="container">
-          <div class="footer__widgets">
-            <div class="row">
-
-              <div class="col-xs-12 text-center">
-                <div class="widget footer__get-in-touch">
-                  <div class="footer__logo mb-30">
-                    <img src="img/logo_light.svg" alt="">
-                  </div>
-                  <div class="footer__get-in-touch__box">
-                    <p>Don’t hesitate to drop me a line</p>
-                    <a href="mailto:hi@maruma.ru">hi@maruma.ru</a>
-                  </div>
-
-                  <div class="footer__socials mt-30 text-center">
-                    <div class="social-icons social-icons--nobase">
-                      <a href="https://www.twitter.com/marulango" target="_blank"><i class="ui-twitter"></i></a>
-                      <a href="https://github.com/marulango" target="_blank"><i class="ui-github"></i></a>
-                      <a href="https://dribbble.com/marulango" target="_blank"><i class="ui-dribbble"></i></a>
-                      <a href="https://www.linkedin.com/in/marulango/" target="_blank"><i class="ui-linkedin"></i></a>
-                    </div>
-                  </div>
-
-                </div>
-              </div> <!-- end get in touch -->
-
-            </div>
-          </div>    
-        </div>
-      </footer> <!-- end footer -->
-
-      <div id="back-to-top">
-        <a href="#top"><i class="ui-arrow-up"></i></a>
       </div>
 
-    </div> <!-- end content wrapper -->
-  </main> <!-- end main wrapper -->
-  
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/datank/1.png" alt="Branding Demo">
+        </div>
+      </div>
 
-  <!-- jQuery Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>  
-  <script type="text/javascript" src="js/scripts.js"></script>
-    
-</body>
-</html>
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-6">
+          <img src="assets/img/datank/5.jpg" alt="Datank Landing Page">
+          <img src="assets/img/datank/7.gif" alt="Navigation button animation" class="au-mt-3">
+        </div>
+        <div class="ae-grid__item item-lg-6">
+          <img src="assets/img/datank/6.jpg" alt="Datank Blog">
+        </div>
+      </div>
+
+
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-7">
+          <img src="assets/img/datank/9.png" alt="Datank Text Styles Definition">
+        </div>
+        <div class="ae-grid__item item-lg-4 item-lg--offset-1">
+          <img src="assets/img/datank/4.png" alt="Brand Styleguide Sample">
+          <img src="assets/img/datank/3.png" alt="Brand Styleguide Sample" class="au-mt-3">
+        </div>
+      </div>
+
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/datank/12.jpg" alt="Brand Styleguide Sample">
+        </div>
+      </div>
+
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/datank/2.jpg" alt="Logo detail">
+        </div>
+      </div>
+
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-5">
+          <img src="assets/img/datank/1.jpg" alt="Logo rework detail">
+        </div>
+        <div class="ae-grid__item item-lg-5 item-lg--offset-1">
+          <img src="assets/img/datank/8.jpg" alt="Logo size rules">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="ae-grid__item item-lg-12 au-lg-ptp-1">
+      <div class="group-buttons au-mt-2">
+        <a href="k8s-bit-quarky.html" class="arrow-button arrow-button--reverse arrow-button--center">
+          Previous Project
+          <div class="arrow-cont arrow-cont-rev">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#arrow"></use>
+            </svg>
+          </div>
+        </a>
+        <a href="ropensci.html" class="arrow-button arrow-button--center">
+          Next Project
+          <span class="arrow-cont">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#arrow"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="ae-container-fluid rk-footer ">
+    <div class="ae-grid__item item-lg-12 au-xs-ta-center">
+      <a href="https://bit.ly/3RW6XTZ" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-dribbble"></use>
+        </svg>
+      </a>
+      <a href="https://bit.ly/3TAeIAl" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-threads"></use>
+        </svg>
+      </a>
+      <a href="https://bit.ly/3TEKNHk" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right">
+      <p class="rk-footer__text rk-footer__contact ">
+        <span class="ae-u-bold">Let's talk:</span>
+        <span class="ae-u-bolder"> <a href="mailto:hola@maruma.ru" class="rk-dark-color ">hola@maruma.ru</a></span>
+      </p>
+    </div>
+  </footer>
+    <script src="assets/js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+  </body>
+  </html>

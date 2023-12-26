@@ -6,3 +6,4 @@ bower.json
 *.scssc
 *.db
 .DS_Store
+prepros.config

@@ -1,258 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>MARU MARU</title>
 
-  <meta charset="utf-8">
-  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
-
-
-  <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <link rel="stylesheet" href="assets/css/urku.css">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon" href="img/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
-
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
 </head>
 
-<body>
+<body class="top-fixed">
+  <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <label for="mobile-menu">
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+    </label>
 
-  <main class="main-wrapper">
-
-    <!-- Navigation -->
-    <header class="nav nav--dark">
-
-      <div class="nav__holder" id="sticky-nav">
-        <div class="container-fluid container-semi-fluid">
-          <div class="flex-parent">
-
-            <div class="nav__header flex-child clearfix">
-              <!-- Logo -->
-              <div class="logo-wrap">
-                <a href="index.html" class="logo__link logo--left">
-                  <img class="logo logo--dark" src="img/logo_dark.svg" alt="logo">
-                  <img class="logo logo--light" src="img/logo_light.svg" alt="logo">
-                </a>
-              </div>
-
-              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-                <span class="nav__icon-toggle-bar"></span>
-              </button>
-            </div> <!-- end nav-header -->
-
-            <nav id="navbar-collapse" class="nav__wrap flex-child flex-right nav__wrap collapse navbar-collapse">              
-              <ul class="nav__menu nav__menu--inline">
-
-                <li>
-                  <a href="index.html#work">Work</a>
-                </li>                
-
-                <li>
-                  <a href="https://www.twitter.com/marulango" target="_blank">Twitter</a>
-                </li>                
-
-                <li>
-                  <a href="https://www.dribbble.com/marulango" target="_blank">Dribbble</a>
-                </li>
-
-                <li>
-                  <a href="mailto:hi@maruma.ru?subject=I'd like to Hire you!" target="_blank">Hire Me!</a>
-                </li>
-
-              </ul> <!-- end menu -->
-
-            </nav> <!-- end nav-wrap -->
-        
-          </div> <!-- end flex-parent -->
-        </div> <!-- end container -->
-
+    <div class="ae-container-fluid rk-topbar">
+      <div class="rk-logo"><a href="index.html"><img src="assets/img/logo_dark.svg" alt=""></a>
       </div>
-    </header> <!-- end navigation -->
+      <nav class="rk-navigation">
+        <ul class="rk-menu">
+          <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Portfolio</a></li>
+          <li class="rk-menu__item"><a href="mailto:hola@maruma.ru" class="rk-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-    <div class="content-wrapper">
-
-      <!-- Hero -->
-      <section class="hero">
-
-        <div class="container hero__container--short">
-          <div class="hero__outer">
-            <div class="hero__inner">
-              <h1 id="quote" class="hero__title mb-0">Hi There, I’m Maru.</h1>
-              <h2>I'm a Senior Product Designer at <a href="https://vouch.us/" target="_blank">Vouch</a>.</h2>
-              <h3 class="mb-30">I make digital products easy to use, so that you won't feel like yelling at your screen.</h3>
-              <p class="mt-30">You can <a href="mailto:hi@maruma.ru?subject=I'd like to schedule time to hear about a Case Study!">request case-studies</a>, or you can <a href="#work">check some of my past work below</a></p>
-            </div>         
-          </div>
-        </div>    
-     
-      </section> <!-- end hero -->
-
-      <!-- Portfolio Classic -->
-      <section id="portfolio" class="section-wrap pb-80">
-        <div class="container">
-
-          <h2 id="work">Selected works</h2>
-
-          <!-- Filter -->
-          <!-- Not sure if really necesary rn 
-          <div class="portfolio-filter">
-            <a href="#" class="filter active" data-filter="*">All</a>
-            <a href="#" class="filter" data-filter=".ui-design">UX/UI Design</a>
-            <a href="#" class="filter" data-filter=".branding">Branding</a>
-            <a href="#" class="filter" data-filter=".illustration">Illustration</a>
-            <a href="#" class="filter" data-filter=".frontend">Front End</a>
-          </div>
-        -->
-
-          <div id="masonry-grid" class="works-grid gutter with-title">
-
-            <div class="work-item product-design">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="k8s.html">
-                    <img src="img/portfolio/single/k8s/4.jpg" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="k8s.html">Kubernetes 1.18</a></h3>
-                  <span class="work-item__category">Branding</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-
-            <div class="work-item ui-design branding frontend">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="datank.html">
-                    <img src="img/portfolio/single/datank/1.png" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="datank.html">Datank.ai</a></h3>
-                  <span class="work-item__category">Branding, UI/UX Design, Front End</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item branding frontend ui-design frontend">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="ropensci.html">
-                    <img src="img/portfolio/single/ropensci/7.png" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="ropensci.html">ROpenSci @ UC Berkeley</a></h3>
-                  <span class="work-item__category">Branding, UI/UX Design, Front End</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item ui-design branding illustration">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="opencollective.html">
-                    <img src="img/portfolio/single/opencollective/land.png" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="opencollective.html">OpenCollective</a></h3>
-                  <span class="work-item__category">UI/UX Design, Branding, Illustration</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item  ui-design frontend">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="opi.html">
-                    <img src="img/portfolio/single/opi/6.png" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="opi.html">Arquímedes @ OPI Analytics </a></h3>
-                  <span class="work-item__category">UI/UX Design, FrontEnd</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item isotope-small illustration branding">
-              <div class="work-item__container">
-                <div class="work-item__img-holder">
-                  <a href="nodeschool.html">
-                    <img src="img/portfolio/nodeschool.gif" alt="" class="work-item__img">
-                  </a>
-                </div>
-                <div class="work-item__description">
-                  <h3 class="work-item__title"><a href="nodeschool.html">NodeSchool Mexico City</a></h3>
-                  <span class="work-item__category">Illustration, Branding</span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-          </div>
+  <article class="ae-container-fluid rk-main">
+    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+      <div class="ae-grid au-pt-3">
+        <div class="ae-grid__item item-lg-8 au-xs-ta-center item-lg--offset-2">
+          <h3 class="ae-u-bolder">Hello! <sup class="ae-mi"> I'm Maru </sup></h3>
+          <p class="ae-delta">I specialize in crafting delightful user experiences, so that you and your users won't feel like yelling at the screen.</p>
         </div>
-      </section> <!-- end portfolio classic -->
+      </div>
+    </section>
 
-    
-      <!-- Footer -->
-      <footer class="footer bg-dark">
-        <div class="container">
-          <div class="footer__widgets">
-            <div class="row">
-
-              <div class="col-xs-12 text-center">
-                <div class="widget footer__get-in-touch">
-                  <div class="footer__logo mb-30">
-                    <img src="img/logo_light.svg" alt="">
-                  </div>
-                  <div class="footer__get-in-touch__box">
-                    <p>Don’t hesitate to drop me a line</p>
-                    <a href="mailto:hi@maruma.ru"> hi@maruma.ru</a>
-                  </div>
-
-                  <div class="footer__socials mt-30 text-center">
-                    <div class="social-icons social-icons--nobase">
-                      <a href="https://www.twitter.com/marulango" target="_blank"><i class="ui-twitter"></i></a>
-                      <a href="https://github.com/marulango" target="_blank"><i class="ui-github"></i></a>
-                      <a href="https://dribbble.com/marulango" target="_blank"><i class="ui-dribbble"></i></a>
-                      <a href="https://www.linkedin.com/in/marulango/" target="_blank"><i class="ui-linkedin"></i></a>
-                    </div>
-                  </div>
-
-                </div>
-              </div> <!-- end get in touch -->
-
+    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
+      <div class="ae-grid au-pt-3">
+        <h4 class="ae-u-bolder">Selected Projects</h4>
+      </div>
+      <div class="ae-grid au-pt-1">
+        <div class="ae-grid__item item-lg--auto">
+          <a href="vouch-txfees.html" class="rk-item">
+            <img src="assets/img/txfees-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Transaction Fees</h2>
+              <p>Vouch</p>
             </div>
-          </div>    
+          </a>
         </div>
-      </footer> <!-- end footer -->
-
-
-      <div id="back-to-top">
-        <a href="#top"><i class="ui-arrow-up"></i></a>
+      </div>
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg--auto">
+          <a href="vouch-design-system.html" class="rk-item rk-landscape">
+            <img src="assets/img/dsv2_1-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Design System v2.1</h2>
+              <p>Vouch</p>
+            </div>
+          </a>
+        </div>
       </div>
 
-    </div> <!-- end content wrapper -->
-  </main> <!-- end main wrapper -->
+      <div class="ae-grid">
 
-  <!-- jQuery Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>  
-  <script type="text/javascript" src="js/scripts.js"></script>
-    
+        <div class="ae-grid__item item-lg--auto">
+          <a href="bitso-onboarding.html" class="rk-item">
+            <img src="assets/img/onboarding-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Onboarding Flow</h2>
+              <p>Bitso</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg--auto">
+          <a href="bitso-pep.html" class="rk-item">
+            <img src="assets/img/pep-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Politically Exposed Person</h2>
+              <p>Bitso</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="ae-grid__item item-lg--auto">
+          <a href="k8s118.html" class="rk-item">
+            <img src="assets/img/k8s-hero.png" alt="">
+            <div class="item-meta">
+              <h2>A Bit Quarky</h2>
+              <p>Kubernetes</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg--auto">
+          <a href="datank.html" class="rk-item">
+            <img src="assets/img/datank-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Founding Design System</h2>
+              <p>Datank.ai</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ae-grid">
+        <div class="ae-grid__item item-lg--auto">
+          <a href="ropensci.html" class="rk-item">
+            <img src="assets/img/ropensci-hero.png" alt="">
+            <div class="item-meta">
+              <h2>Brand Identity</h2>
+              <p>ROpenSci</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="ae-grid__item item-lg--auto">
+          <a href="opencollective.html" class="rk-item">
+            <img src="assets/img/oc-hero.png" alt="">
+            <div class="item-meta">
+              <h2>MVP App & Brand Identity</h2>
+              <p>opencollective</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="ae-grid__item item-lg--auto">
+          <a href="opi.html" class="rk-item">
+            <img src="assets/img/opi-hero.jpg" alt="">
+            <div class="item-meta">
+              <h2>Arquimedes Project</h2>
+              <p>OPI Analytics</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+  </article>
+
+  <footer class="ae-container-fluid rk-footer ">
+    <div class="ae-grid__item item-lg-12 au-xs-ta-center">
+      <a href="https://bit.ly/3RW6XTZ" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-dribbble"></use>
+        </svg>
+      </a>
+      <a href="https://bit.ly/3TAeIAl" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-threads"></use>
+        </svg>
+      </a>
+      <a href="https://bit.ly/3TEKNHk" class="rk-social-btn ">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right">
+      <p class="rk-footer__text rk-footer__contact ">
+        <span class="ae-u-bold">Let's talk:</span>
+        <span class="ae-u-bolder"> <a href="mailto:hola@maruma.ru" class="rk-dark-color ">hola@maruma.ru</a></span>
+      </p>
+    </div>
+  </footer>
+  <script src="assets/js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 </html>
