@@ -4,6 +4,8 @@ node_modules/
 bower.json
 .sass-cache/
 *.scssc
+sass
+*.sass
 *.db
 .DS_Store
 prepros.config

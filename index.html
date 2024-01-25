@@ -5,187 +5,338 @@
   <meta charset="UTF-8">
   <title>MARU MARU</title>
 
-  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
-  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
-  <link rel="stylesheet" href="assets/css/urku.css">
-
   <!-- Favicons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" href="assets/img/assets/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://use.typekit.net/uyd6ofq.css">
+  <link rel="stylesheet" href="assets/css/bulma.css">
+  <link rel="stylesheet" href="assets/css/marulango.css">
+
+  <!-- Scripts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
-<body class="top-fixed">
-  <header class="ae-container-fluid ae-container-fluid--full rk-header ">
-    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
-    <label for="mobile-menu">
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-    </label>
-
-    <div class="ae-container-fluid rk-topbar">
-      <div class="rk-logo"><a href="index.html"><img src="assets/img/logo_dark.svg" alt=""></a>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a href="https://marulango.com"><img src="assets/img/theme/logo.svg" alt=""></a>
+        </div>
+        <div class="navbar-end is-hidden-mobile">
+          <p><a href="mailto:hola@maruma.ru">Contact</a></p>
+        </div>
       </div>
-      <nav class="rk-navigation">
-        <ul class="rk-menu">
-          <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">Portfolio</a></li>
-          <li class="rk-menu__item"><a href="mailto:hola@maruma.ru" class="rk-menu__link">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
+  <article>
 
-  <article class="ae-container-fluid rk-main">
-    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      <div class="ae-grid au-pt-3">
-        <div class="ae-grid__item item-lg-8 item-lg--offset-2">
-          <h3 class="ae-u-bolder">Hello, I'm Maru.</h3>
-          <p class="ae-delta">I specialize in crafting delightful user experiences, so that you and your users won't feel like yelling at the screen.</p>
+    <section id="hero">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <p class="greeting animate__animated animate__fadeInDown">Hello there!</p>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">I’m Maru - a designer who loves to create experiences that empower humans through product strategy, interaction and visual design.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      <div class="ae-grid au-pt-1">
-        <div class="ae-grid__item item-lg--auto">
-          <a href="vouch-txfees.html" class="rk-item">
-            <img src="assets/img/txfees-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Transaction Fees</h2>
-              <p>Vouch</p>
-            </div>
-          </a>
+    <section class="animate__animated animate__fadeIn animate__delay-2s">
+      <div class="container">
+        <div class="columns is-multiline">
+
+          <div class="column is-full">
+            <p class="company">Vouch</p>
+            <p class="title">Transaction fees for business insurance</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>Redesigned the checkout experience to increase clarity on transaction fees How did we pass transaction fees to new and renewing Clients, for  Credit Cards and ACH, while remaining compliant with state and federal regulations in order to reduce operational costs and improve Client experience?</p>
+          </div>
+
+          <div class="column is-offset-1-desktop is-4-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>Product Strategy</li>
+              <li>User Research</li>
+              <li>User Interface Design (Web, Mobile)</li>
+              <li>User Experience Design</li>
+            </ul>
+          </div>
+
+          <div class="column is-2-desktop is-full-mobile">
+            <p class="label mb-2">Misc</p>
+            <ul>
+              <li><a href="https://bit.ly/41DUrf8">Case study ↗︎</a></li>
+            </ul>
+          </div>
+
+          <div class="column is-full">
+            <figure class="image is-16by9">
+              <img src="assets/img/txfees/txfees-hero.png">
+            </figure>
+          </div>
+
         </div>
       </div>
-      <div class="ae-grid">
-        <div class="ae-grid__item item-lg--auto">
-          <a href="vouch-design-system.html" class="rk-item rk-landscape">
-            <img src="assets/img/dsv2_1-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Design System v2.1</h2>
-              <p>Vouch</p>
-            </div>
-          </a>
+    </section>
+
+    <section class="animate__animated">
+      <div class="container">
+        <div class="columns is-multiline">
+
+          <div class="column is-full">
+            <p class="company">Vouch</p>
+            <p class="title">An API-responsive design system</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>After accruing considerable design, technical and experience debt I helped improve accesibility, data-entry reliability and velocity across teams by leading the design system's next iteration.</p>
+          </div>
+
+          <div class="column is-offset-1-desktop is-4-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>Product Strategy</li>
+              <li>User Research</li>
+              <li>User Interface Design (Web, Mobile)</li>
+              <li>User Experience Design</li>
+              <li>Hi-fi Prototyping</li>
+            </ul>
+          </div>
+
+          <div class="column is-2-desktop is-full-mobile">
+            <p class="label mb-2">Misc</p>
+            <ul>
+              <li><a href="https://bit.ly/3NIsg9b">Case study ↗︎</a></li>
+            </ul>
+          </div>
+
+          <div class="column is-4">
+            <figure class="image">
+              <img src="assets/img/vouch-ds/text-fill-empty.gif">
+            </figure>
+            <p class="caption">Transition from empty to populated field</p>
+          </div>
+          <div class="column is-4">
+            <figure class="image">
+              <img src="assets/img/vouch-ds/input-empty.gif">
+            </figure>
+            <p class="caption">Empty text field, multiple status</p>
+          </div>
+          <div class="column is-4">
+            <figure class="image">
+              <img src="assets/img/vouch-ds/input-filled.gif">
+            </figure>
+            <p class="caption">Populated text field, multiple status</p>
+          </div>
+          <div class="column is-full">
+            <figure class="image">
+              <img src="assets/img/vouch-ds/select.png" alt="Input field, select">
+            </figure>
+          </div>
+          <div class="column is-4-desktop is-full-mobile">
+            <figure class="image">
+              <img src="assets/img/vouch-ds/buttons.png" alt="">
+            </figure>
+          </div>
+          <div class="column is-7-desktop is-offset-1-desktop is-full-mobile">
+            <figure class="image"><img src="assets/img/vouch-ds/typesetting-demo.png" alt=""></figure>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="ae-grid">
+    <section class="animate__animated">
+      <div class="container">
+        <div class="columns is-multiline">
 
-        <div class="ae-grid__item item-lg--auto">
-          <a href="bitso-onboarding.html" class="rk-item">
-            <img src="assets/img/onboarding-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Onboarding Flow</h2>
-              <p>Bitso</p>
-            </div>
-          </a>
+          <div class="column is-full">
+            <p class="company">Bitso</p>
+            <p class="title">Creating a new onboarding experience</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>Created the onboarding flow to guide users from diverse countries through creating and funding their cryto wallet, while navigating the intricacies of different jurisdictions' regulations and users different cultural perception of identity.</p>
+          </div>
+
+          <div class="column is-offset-1-desktop is-5-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>Product Strategy</li>
+              <li>User Research</li>
+              <li>User Interface Design (Web, Android, iOS)</li>
+              <li>User Experience Design</li>
+              <li>Hi-fi Prototyping</li>
+            </ul>
+          </div>
+
+          <div class="column is-full">
+            <figure class="image is-16by9">
+              <img src="assets/img/bitso-onboarding/onboarding-hero.png">
+            </figure>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="ae-grid">
-        <div class="ae-grid__item item-lg--auto">
-          <a href="bitso-pep.html" class="rk-item">
-            <img src="assets/img/pep-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Politically Exposed Person</h2>
-              <p>Bitso</p>
-            </div>
-          </a>
-        </div>
+    <section class="animate__animated">
+      <div class="container">
+        <div class="columns is-multiline">
 
-        <div class="ae-grid__item item-lg--auto">
-          <a href="k8s118.html" class="rk-item">
-            <img src="assets/img/k8s-hero.png" alt="">
-            <div class="item-meta">
-              <h2>A Bit Quarky</h2>
-              <p>Kubernetes</p>
-            </div>
-          </a>
+          <div class="column is-full">
+            <p class="company">Bitso</p>
+            <p class="title">Identifying if users are political exposed persons</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>Led user research to launch a version of the onboarding that increased successful verification and first transaction rates after introducing changes to successfully identify Politically Exposed Persons while aligning across multiple countries regulatory </p>
+          </div>
+
+          <div class="column is-offset-1-desktop is-5-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>User Research</li>
+              <li>User Interface Design (Web, Android, iOS)</li>
+              <li>User Experience Design</li>
+              <li>Hi-fi Prototyping</li>
+            </ul>
+          </div>
+
+          <div class="column is-full">
+            <figure class="image is-16by9">
+              <img src="assets/img/bitso-pep/bitso-pep-hero.png">
+            </figure>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="ae-grid">
-        <div class="ae-grid__item item-lg--auto">
-          <a href="datank.html" class="rk-item">
-            <img src="assets/img/datank-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Founding Design System</h2>
-              <p>Datank.ai</p>
-            </div>
-          </a>
+    <section class="animate__animated">
+      <div class="container">
+        <div class="columns is-multiline">
+
+          <div class="column is-full">
+            <p class="company">Kubernetes</p>
+            <p class="title">A bit quarky</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>The LHC is the world’s largest and most powerful particle accelerator and the result of the collaboration of thousands of scientists from around the world, all for the advancement of science. In a similar manner, Kubernetes has been a project that has united thousands of contributors from hundreds of organizations – all to work towards the same goal of improving cloud computing in all aspects! "A Bit Quarky" as the release name is meant to remind us that unconventional ideas can bring about great change and keeping an open mind to diversity will lead help us innovate.</p>
+          </div>
+
+          <div class="column is-3-desktop is-offset-1-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>Branding</li>
+              <li>Illustration</li>
+            </ul>
+          </div>
+
+          <div class="column is-2-desktop is-full-mobile">
+            <p class="label mb-2">Misc</p>
+            <ul>
+              <li><a href="https://kubernetes.io/blog/2020/03/25/kubernetes-1-18-release-announcement/">Release annoucement ↗︎</a></li>
+              <li><a href="https://store.cncf.io/products/fitted-kubernetes-1-18-release-team-tee">Swag ↗︎</a></li>
+            </ul>
+          </div>
+
+          <div class="column is-full">
+            <figure class="image is-16by9">
+              <img src="assets/img/k8s/4.jpg">
+            </figure>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="ae-grid">
-        <div class="ae-grid__item item-lg--auto">
-          <a href="ropensci.html" class="rk-item">
-            <img src="assets/img/ropensci-hero.png" alt="">
-            <div class="item-meta">
-              <h2>Brand Identity</h2>
-              <p>ROpenSci</p>
-            </div>
-          </a>
+    <section class="animate__animated">
+      <div class="container">
+        <div class="columns is-multiline">
+
+          <div class="column is-full">
+            <p class="company">Datank</p>
+            <p class="title">Crystal Clear Data Science</p>
+          </div>
+
+          <div class="column is-5-desktop is-full-mobile">
+            <p class="label mb-2">Summary</p>
+            <p>As founding designer, I built a solid branding and a robust product strategy for pioneering Artificial Intelligence in order to provide complex business intelligence analysis using voice inputs.</p>
+          </div>
+
+          <div class="column is-offset-1-desktop is-5-desktop is-full-mobile">
+            <p class="label mb-2">Role</p>
+            <ul>
+              <li>Branding</li>
+              <li>0>1 Product Strategy</li>
+              <li>User Interface Design</li>
+              <li>Voice User Interface</li>
+              <li>User Experience Design</li>
+            </ul>
+          </div>
+
+          <div class="column is-full">
+            <figure class="image is-16by9">
+              <img src="assets/img/datank/datank-hero.png">
+            </figure>
+          </div>
+
         </div>
-
-        <div class="ae-grid__item item-lg--auto">
-          <a href="opencollective.html" class="rk-item">
-            <img src="assets/img/oc-hero.png" alt="">
-            <div class="item-meta">
-              <h2>MVP App & Brand Identity</h2>
-              <p>opencollective</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="ae-grid__item item-lg--auto">
-          <a href="opi.html" class="rk-item">
-            <img src="assets/img/opi-hero.jpg" alt="">
-            <div class="item-meta">
-              <h2>Arquimedes Project</h2>
-              <p>OPI Analytics</p>
-            </div>
-          </a>
-        </div>
-
       </div>
-
     </section>
   </article>
 
-  <footer class="ae-container-fluid rk-footer ">
-    <div class="ae-grid__item item-lg-12 au-xs-ta-center">
-      <a href="https://dribbble.com/marulango" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-dribbble"></use>
-        </svg>
-      </a>
-      <a href="https://www.threads.net/@marulango" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-threads"></use>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/marulango" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-linkedin"></use>
-        </svg>
-      </a>
+
+  <footer>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <a href="https://dribbble.com/marulango" target="_blank">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-dribbble">
+            </svg>
+          </a>
+
+          <a href="https://www.threads.net/@marulango" target="_blank">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-threads">
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/marulango" target="_blank">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-linkedin">
+            </svg>
+          </a>
+        </div>
+
+        <div class="column is-half">
+          <p>Maru Maru © 2024</p>
+        </div>
+      </div>
     </div>
-    <div class="ae-grid__item item-lg-12 au-xs-ta-center au-lg-ta-right">
-      <p class="rk-footer__text rk-footer__contact ">
-        <span class="ae-u-bold">Let's talk:</span>
-        <span class="ae-u-bolder"> <a href="mailto:hola@maruma.ru" class="rk-dark-color ">hola@maruma.ru</a></span>
-      </p>
-    </div>
+    <script>
+      $(window).on('scroll', function(){
+        if ($("section.animate__animated").is(':visible')){
+            $("section.animate__animated").addClass("animate__fadeIn");
+        }
+      });
+    </script>
   </footer>
-  <script src="assets/js/svg4everybody.min.js"></script>
-  <script>svg4everybody();</script>
 </body>
 </html>
