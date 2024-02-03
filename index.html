@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section class="animate__animated">
+    <section class="animation animate__animated">
       <div class="container is-fluid">
         <div class="columns is-multiline">
 
@@ -156,7 +156,7 @@
       </div>
     </section>
 
-    <section class="animate__animated">
+    <section class="animation animate__animated animate__delay-1s">
       <div class="container is-fluid">
         <div class="columns is-multiline">
 
@@ -191,7 +191,7 @@
       </div>
     </section>
 
-    <section class="animate__animated">
+    <section class="animation animate__animated animate__delay-1s">
       <div class="container is-fluid">
         <div class="columns is-multiline">
 
@@ -225,7 +225,7 @@
       </div>
     </section>
 
-    <section class="animate__animated">
+    <section class="animation animate__animated animate__delay-1s">
       <div class="container is-fluid">
         <div class="columns is-multiline">
 
@@ -265,7 +265,7 @@
       </div>
     </section>
 
-    <section class="animate__animated">
+    <section class="animation animate__animated animate__delay-1s">
       <div class="container is-fluid">
         <div class="columns is-multiline">
 
@@ -304,7 +304,7 @@
 
   <footer>
     <div class="container is-fluid">
-      <div class="columns is-gapless">
+      <div class="columns is-multiline">
         <div class="column is-full">
           <a href="https://dribbble.com/marulango" target="_blank">
             <svg>
@@ -330,13 +330,30 @@
         </div>
       </div>
     </div>
-    <script>
-      $(window).on('scroll', function(){
-        if ($("section.animate__animated").is(':visible')){
-            $("section.animate__animated").addClass("animate__fadeIn");
-        }
+  </footer>
+  <script>
+      function addAnimationClass(entries, observer) {
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__fadeIn');
+          } else {
+            entry.target.classList.remove('animate__fadeIn');
+          }
+        });
+      }
+
+
+      let observer = new IntersectionObserver(addAnimationClass, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1 
+      });
+
+
+      document.querySelectorAll('.animation').forEach(testElem => {
+        observer.observe(testElem); // Observe each 'test' element
       });
     </script>
-  </footer>
 </body>
 </html>
