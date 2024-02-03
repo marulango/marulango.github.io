@@ -99,3 +99,7 @@ footer p {
   letter-spacing: 2px;
   color: #777;
 }
+
+.animation {
+	opacity: 0;
+}
