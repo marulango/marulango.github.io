@@ -111,7 +111,7 @@ footer p {
   background-color: transparent;
   background: linear-gradient(200deg, #6775F5 0%, #B358FB 14%, #FF9CC3 28%, #FF9365 42%, #FFF06C 56%, #8CFF8A 70%, #89F1FF 84%, #6775F5 100%);
   aspect-ratio: 1;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   overflow-x: hidden;
   animation: rotate 10s linear infinite;
