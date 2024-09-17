@@ -5,8 +5,9 @@ body {
 	color: #313131;
 	font-size: 1rem;
 	letter-spacing: 0.016rem;
-	background: url(../img/theme/blurb.svg) top right no-repeat;
+	/* background: url(../img/theme/blurb.svg) top right no-repeat; */
 }
+
 a {
 	color: #313131;
 	text-decoration: underline;
@@ -74,6 +75,7 @@ section {
 
 .greeting {
 	font-size: 2.25rem;
+	font-weight: 700;
 }
 
 footer {
@@ -102,4 +104,48 @@ footer p {
 
 .animation {
 	opacity: 0;
+}
+
+
+.blob {
+  background-color: transparent;
+  background: linear-gradient(200deg, #6775F5 0%, #B358FB 14%, #FF9CC3 28%, #FF9365 42%, #FFF06C 56%, #8CFF8A 70%, #89F1FF 84%, #6775F5 100%);
+  aspect-ratio: 1;
+  position: fixed;
+  z-index: -1;
+  overflow-x: hidden;
+  animation: rotate 10s linear infinite;
+  animation: scale 45s linear infinite;
+  height: 1200px;
+  width: 1200px;
+  top: -600px;
+  right: -600px;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: 1px solid red;
+  filter: blur(100px);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(2.3);
+	}
+	70% {
+		transform: scale(.75);
+	}
+	100% {
+		transform: scale(1.20);
+	}
+}
 }
