@@ -71,6 +71,7 @@ section {
 	font-size: 2rem;
 	padding: 7rem 0;
 	min-height: 55vh;
+	background: transparent;
 }
 
 .greeting {
@@ -105,6 +106,16 @@ footer p {
 .animation {
 	opacity: 0;
 }
+
+section {
+	background: white;
+}
+
+.fadeout {
+	background: linear-gradient(0deg, rgba(255,255,255,1) 76%, rgba(255,255,255,0.5592612044817927) 89%, rgba(255,255,255,0) 100%);
+}
+
+
 
 
 .blob {
