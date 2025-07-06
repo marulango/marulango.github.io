@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Elza:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.a-transition {
+  @apply opacity-100 transition-opacity duration-700 ease-in-out;
+}
