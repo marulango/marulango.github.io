@@ -24,3 +24,16 @@ const observer = new IntersectionObserver(
 Array.from(aElems).forEach(elem => {
   observer.observe(elem);
 });
+
+
+// gradient fun
+ const bg = document.getElementById('hero');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const fadeStart = 0;
+    const fadeEnd = 300;
+    const opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+
+    bg.style.opacity = opacity;
+});

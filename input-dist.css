@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Elza:wght@400;500;700&display=swap');
+@import url("https://use.typekit.net/uyd6ofq.css");
 
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
@@ -580,6 +580,14 @@ video {
   }
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -592,6 +600,14 @@ video {
   inset: 0px;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -602,6 +618,10 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-\[-2\]{
+  z-index: -2;
 }
 
 .col-span-1{
@@ -628,6 +648,11 @@ video {
   grid-column-start: 6;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-32{
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -650,6 +675,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -660,6 +689,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -674,8 +707,20 @@ video {
   display: none;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-full{
@@ -684,6 +729,14 @@ video {
 
 .max-w-2xl{
   max-width: 42rem;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 @keyframes bounce{
@@ -700,6 +753,24 @@ video {
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+@keyframes gradientShift{
+  0%{
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift{
+  animation: gradientShift 15s ease infinite;
 }
 
 .list-inside{
@@ -730,6 +801,10 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
 }
@@ -751,8 +826,24 @@ video {
        column-gap: 2rem;
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .text-balance{
@@ -782,6 +873,10 @@ video {
   --tw-gradient-to: #a0f1ff var(--tw-gradient-to-position);
 }
 
+.bg-400{
+  background-size: 400% 400%;
+}
+
 .px-32{
   padding-left: 8rem;
   padding-right: 8rem;
@@ -797,18 +892,27 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.py-32{
-  padding-top: 8rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-32{
   padding-bottom: 8rem;
 }
 
-.pt-14{
-  padding-top: 3.5rem;
+.text-center{
+  text-align: center;
 }
 
 .text-2xl{
@@ -953,6 +1057,10 @@ video {
   transition-duration: 700ms;
 }
 
+.bg-gradient-shift{
+  background-image: linear-gradient(-45deg, #ffffff, #f9e0d9, #fadadd, #d0eafc, #e1f7d5, #ffffff );
+}
+
 .hover-links{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,6 +1073,17 @@ video {
   color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
+.hover-svg{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hover-svg:hover{
+  fill: #db2777;
+}
+
 @media (min-width: 640px){
   .sm\:mb-4{
     margin-bottom: 1rem;
@@ -974,14 +1093,25 @@ video {
     display: flex;
   }
 
+  .sm\:space-y-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
 
-  .sm\:py-48{
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+  .sm\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .sm\:text-5xl{
@@ -1032,10 +1162,5 @@ video {
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:py-56{
-    padding-top: 14rem;
-    padding-bottom: 14rem;
   }
 }

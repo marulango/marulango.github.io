@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Elza:wght@400;500;700&display=swap');
+@import url("https://use.typekit.net/uyd6ofq.css");
 
 @tailwind base;
 @tailwind components;
@@ -7,4 +7,8 @@
 
 .hover-links {
   @apply hover:text-pink-600 transition-all ease-in duration-300
+}
+
+.hover-svg {
+  @apply hover:fill-pink-600 transition-all ease-in duration-300;
 }
