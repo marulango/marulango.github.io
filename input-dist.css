@@ -987,9 +987,9 @@ video {
     gap: 1rem;
   }
 
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .lg\:px-48{
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   .lg\:px-8{
