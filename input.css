@@ -5,6 +5,6 @@
 @tailwind utilities;
 
 
-.a-transition {
-  @apply opacity-100 transition-opacity duration-700 ease-in-out;
+.hover-links {
+  @apply hover:text-pink-600 transition-all ease-in duration-300
 }
