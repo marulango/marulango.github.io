@@ -938,11 +938,6 @@ video {
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -956,13 +951,6 @@ video {
   .sm\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 768px){
-  .md\:px-24{
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 }
 
