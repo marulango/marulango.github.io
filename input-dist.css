@@ -628,6 +628,11 @@ video {
   grid-column-start: 6;
 }
 
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -635,10 +640,6 @@ video {
 
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
 }
 
 .mb-8{
@@ -815,6 +816,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -876,6 +882,10 @@ video {
 
 .tracking-wide{
   letter-spacing: 0.025em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .tracking-widest{
@@ -977,11 +987,6 @@ video {
   .sm\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .sm\:text-xl\/8{
-    font-size: 1.25rem;
-    line-height: 2rem;
   }
 }
 
