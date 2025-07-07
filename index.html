@@ -1,372 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>MARU MARU</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MARU MARU</title>
+   <meta charset="UTF-8" />
+   <link href="input-dist.css" rel="stylesheet">
 
-  <!-- Favicons -->
+   <!-- Favicons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" href="assets/img/assets/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon.ico">
 
-  <!-- Style -->
-  <link rel="stylesheet" href="https://use.typekit.net/uyd6ofq.css">
-  <link rel="stylesheet" href="assets/css/bulma.css">
-  <link rel="stylesheet" href="assets/css/marulango.css">
-
-  <!-- Scripts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
+<body class="scroll-smooth">
+   <!-- Radial Gradient Background -->
+   <div id="hero" aria-hidden="true" class="fixed top-0 left-0 w-full h-full z-[-2] pointer-events-none min-h-screen bg-gradient-shift bg-400 animate-gradient-shift"></div>
+   
+   <article class="min-h-screen flex grid grid-cols-1 gap-4 px-4 sm:px-2 md:px-16 lg:px-32">
 
-<body>
-  <header>
-    <div class="container is-fluid">
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <a href="https://marulango.com"><img src="assets/img/theme/logo.svg" alt=""></a>
+      <section class="relative isolate pb-32 text-gray-600">
+
+         <div class="max-w-2xl py-16 lg:py-32">
+            <a href="https://marulango.com"><img src="assets/img/theme/logo.svg" alt=""></a>
+
+            <div class="mt-32 sm:mb-4 sm:flex">
+               <div class="text-sm/6 uppercase tracking-wider">
+                  <p>Hello!</p>
+                  <p>Nice to meet you.</p>
+               </div>
+            </div>
+            <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-800 sm:text-7xl">I'm Maru</h1>
+            <p class="mt-8 text-3xl font-medium text-gray-600">I help empower people through design that’s strategic, interactive, and—most importantly—human.</p>
+
+            <div class="mt-8 flex gap-x-8">
+               <a href="#projects" class="text-lg font-semibold animate-bounce hover-links">
+                  Browse projects <span aria-hidden="true">↓</span>
+               </a>
+               <a href="#" class="text-sm/6 font-semibold text-gray-500 hover-links">
+                 Get in touch <span aria-hidden="true">→</span>
+              </a>
+           </div>
         </div>
-        <div class="navbar-end is-hidden-mobile">
-          <p><a href="mailto:hola@maruma.ru">Contact</a></p>
-        </div>
+      </section>
+
+
+
+      <section id="projects" class="relative isolate col-span-1 transition-opacity duration-700">
+         <div class="grid grid-cols-8 gap-6 text-gray-600">
+            <div class="col-span-8 text-lg text-gray-800">
+               <h3 class="text-sm/6 tracking-widest uppercase text-gray-600">Vouch Insurance</h3>
+               <h2 class="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">Saving $20K/week</h2>
+               <p class="text-2xl mt-2 font-semibold tracking-tight">with a checkout that <span class="italic" aria-hidden="true">actually</span> checks out.</p>
+            </div>
+            <div class="mt-6 col-span-8 lg:col-span-4 text-lg">
+               <h3 class="text-sm/6 tracking-widest text-gray-500 uppercase">Summary</h3>
+               <p>Redesigned checkout to clarify transaction fees across payment methods, making it easier for new and renewing clients. The result: a transparent, compliant flow that cut confusion and saved over $20K/week in support and ops costs. Clearer for users, cleaner for ops—no hidden fees, no friction.</p>
+               <p class="mt-4">
+                  <a href="https://bit.ly/41DUrf8" class="font-semibold hover-links" target="_blank">Case study <span aria-hidden="true">→</span></a>
+               </p>
+            </div>
+
+            <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+               <p class="text-sm/6 uppercase tracking-widest">Role</p>
+               <ul class="mt-2 text-lg">
+                  <li>Product Strategy</li>
+                  <li>User Research</li>
+                  <li>User Interface Design (Web, Mobile)</li>
+                  <li>User Experience Design</li>
+               </ul>
+            </div>
+
+            <div class="my-8 col-span-8">
+               <img src="assets/img/txfees/hero.png" alt="" class="rounded-xl">
+            </div>
+         </div>
+      </section>
+
+   <section class="relative isolate col-span-1 transition-opacity duration-700">
+      <div class="grid grid-cols-8 gap-6 text-gray-600">
+         <div class="col-span-8 text-gray-800 text-lg">
+            <h3 class="text-sm/6 tracking-widest uppercase text-gray-800">Vouch Insurance</h3>
+            <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Design system upgrade</h2>
+            <p class="text-2xl font-semibold mt-2 tracking-tight">Speeding up devs and smoothing ops by 30%.</p>
+         </div>
+         <div class="mt-6 col-span-8 lg:col-span-4 text-lg">
+            <h3 class="text-sm/6 tracking-widest uppercase">Summary</h3>
+            <p class="mt-2">A design system that was weighed down by debt and quirks, slowing both devs and ops. I led the next iteration—improving accessibility, fixing data-entry issues, and streamlining ops workflows.</p>
+            <p>The result? A 30% boost in engineering velocity and a noticeably smoother day for the whole team.</p>
+            <p class="mt-4">
+               <a href="https://bit.ly/3NIsg9b" class="font-semibold hover-links" target="_blank">Case study <span aria-hidden="true">→</span></a>
+            </p>
+         </div>
+
+         <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+            <p class="text-sm/6 uppercase tracking-widest">Role</p>
+            <ul class="text-lg mt-2">
+               <li>Product Strategy</li>
+               <li>User Research</li>
+               <li>User Interface Design (Web, Mobile)</li>
+               <li>User Experience Design</li>
+               <li>High Fidelity Prototyping</li> 
+            </ul>
+         </div>
+
+         <div class="my-8 col-span-8 grid grid-cols-6 lg:gap-4">
+            <img src="assets/img/vouch-ds/hero.png" alt="" class="rounded-xl col-span-6" >
+            <img src="assets/img/vouch-ds/text-fill-empty.gif" alt="" class="rounded-xl col-span-6 lg:col-span-2" >
+            <img src="assets/img/vouch-ds/input-empty.gif"  alt="" class="rounded-xl col-span-6 lg:col-span-2">
+            <img src="assets/img/vouch-ds/input-filled.gif" alt="" class="rounded-xl col-span-6 lg:col-span-2">
+            <img src="assets/img/vouch-ds/select.png" alt="" class="rounded-xl col-span-6 lg:col-span-6">
+            <img src="assets/img/vouch-ds/buttons.png" alt="" class="rounded-xl col-span-6 lg:col-span-2">
+            <img src="assets/img/vouch-ds/typesetting-demo.png" alt="" class="rounded-xl col-span-6 lg:col-span-4">
+         </div>
       </div>
-    </div>
-  </header>
+   </section>
 
-  <article>
-    <div class="blob"></div>
-    <section id="hero">
-      <div class="container is-fluid">
-        <div class="columns">
-          <div class="column is-half">
-            <p class="greeting animate__animated animate__fadeInDown">Hello! <span class="animate__animated animate__fadeIn animate__delay-1s">I'm Maru.</span></p>
-            <p class="animate__animated animate__fadeIn animate__delay-2s">A designer passionate about creating experiences that empower people by leveraging product strategy, interaction, and visual design.</p>
-          </div>
-        </div>
+   <section class="relative isolate col-span-1 transition-opacity duration-700">
+      <div class="grid grid-cols-8 gap-6 text-gray-600">
+         <div class="col-span-8 text-gray-800 text-lg">
+            <h3 class="text-sm/6 tracking-widest uppercase text-gray-800">Bitso</h3>
+            <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">42% jump in recurring transactions</h2>
+            <p class="text-2xl font-semibold mt-2 tracking-tight">Powering Bitso’s rise to a Latin American fintech powerhouse</p>
+         </div>
+         <div class="mt-6 col-span-8 lg:col-span-4 text-lg">
+            <h3 class="text-sm/6 tracking-widest uppercase">Summary</h3>
+            <p class="mt-2">I led the design of an onboarding flow that truly guides users—navigating strict regulations, privacy concerns, and cultural nuances. The result: a transformation from a long, impersonal form into a personalized, trustworthy welcome that built user confidence and drove significant growth.</p>
+            <p class="mt-4">
+               <a href="https://bit.ly/3WQqMNK" class="font-semibold hover-links" target="_blank">Case study <span aria-hidden="true">→</span></a>
+            </p>
+         </div>
+
+         <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+            <p class="text-sm/6 uppercase tracking-widest">Role</p>
+            <ul class="text-lg mt-2">
+               <li>Product Strategy</li>
+               <li>User Research</li>
+               <li>User Interface Design (Web, Mobile)</li>
+               <li>User Experience Design</li>
+               <li>High Fidelity Prototyping</li> 
+            </ul>
+         </div>
+
+         <div class="my-8 col-span-8">
+            <img src="assets/img/bitso-onboarding/onboarding-hero.png" alt="" class="rounded-xl" >
+         </div>
       </div>
-    </section>
+   </section>
 
-    <section class="fadeout animate__animated animate__fadeIn animate__delay-3s">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
+   <section class="relative isolate col-span-1 transition-opacity duration-700">
+      <div class="grid grid-cols-8 gap-6 text-gray-600">
+         <div class="col-span-8 text-gray-800 text-lg">
+            <h3 class="text-sm/6 tracking-widest uppercase text-gray-800">Bitso</h3>
+            <h2 class="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">Identifying Politically Exposed Persons</h2>
+         </div>
+         <div class="mt-6 col-span-8 lg:col-span-4">
+            <h3 class="text-sm/6 tracking-widest uppercase">Summary</h3>
+            <p class="mt-2 text-lg">I led research and UX improvements to support new regulations for identifying Politically Exposed Persons (PEPs) in one market—carefully integrating the update into the existing flow without impacting users in other countries. The solution honored shared infrastructure and data structures, maintaining consistency while meeting compliance with clarity and care.</p>
+         </div>
 
-          <div class="column is-full">
-            <p class="company">Vouch</p>
-            <p class="title">Saving $20K USD a week by improving the checkout experience</p>
-          </div>
-
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>Redesigned the checkout experience to increase clarity on transaction fees on multiple payment methods for both new and renewing Clients while remaining compliant with state and federal regulations to reduce operational costs and improve the overall experience.</p>
-          </div>
-
-          <div class="column is-offset-1-desktop is-4-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>Product Strategy</li>
-              <li>User Research</li>
-              <li>User Interface Design (Web, Mobile)</li>
-              <li>User Experience Design</li>
+         <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+            <p class="text-sm/6 uppercase tracking-widest">Role</p>
+            <ul class="text-lg mt-2">
+               <li>User Research</li>
+               <li>User Interface Design (Web, Android, iOS)</li>
+               <li>User Experience Design</li>
+               <li>High Fidelity Prototyping</li> 
             </ul>
-          </div>
+         </div>
 
-          <div class="column is-2-desktop is-full-mobile">
-            <p class="label mb-2">Misc</p>
-            <ul>
-              <li><a href="https://bit.ly/41DUrf8">Case study ↗︎</a></li>
-            </ul>
-          </div>
-
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/txfees/hero.png">
-            </figure>
-          </div>
-
-        </div>
+         <div class="my-8 col-span-8">
+            <img src="assets/img/bitso-pep/bitso-pep-hero.png" alt="" class="rounded-xl" >
+         </div>
       </div>
-    </section>
+   </section>
 
-    <section class="animation animate__animated">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
+   <section class="relative isolate col-span-1 transition-opacity duration-700">
+      <div class="grid grid-cols-8 gap-6 text-gray-600">
+         <div class="col-span-8">
+            <h3 class="text-sm/6 tracking-widest uppercase text-gray-600">Kubernetes</h3>
+            <h2 class="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl text-gray-800">A Bit Quarky</h mt-22>
+            </div>
+            <div class="mt-6 col-span-8 lg:col-span-4">
+               <h3 class="text-sm/6 tracking-widest uppercase">Summary</h3>
+               <p class="text-lg mt-2">As brand designer and illustrator for this release, I brought a playful, science-inspired identity to one of Kubernetes’ most community-driven updates. “A Bit Quarky” nodded to both particle physics and the beauty of unconventional thinking—so I leaned into bold, expressive visuals that celebrated diversity, experimentation, and collaboration. From quirky mascots to a vibrant palette, the branding reflected the spirit of open-source innovation: united, curious, and just the right amount of weird.</p>
+               <div class="mt-8 text-lg flex flex-col sm:flex-row gap-y-4 sm:gap-x-8">
+                  <a class="font-semibold hover-links" href="https://kubernetes.io/blog/2020/03/25/kubernetes-1-18-release-announcement/">Release annoucement <span aria-hidden="true">→</span></a>
+                  <a class="font-semibold hover-links" href="https://store.cncf.io/products/fitted-kubernetes-1-18-release-team-tee">Swag <span aria-hidden="true">→</span></a>
+               </div>
+            </div>
 
-          <div class="column is-full">
-            <p class="company">Vouch</p>
-            <p class="title">How a design system improvement made development 30% faster</p>
-          </div>
+            <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+               <p class="text-sm/6 uppercase tracking-widest">Role</p>
+               <ul class="mt-2 text-lg">
+                  <li>Branding</li>
+                  <li>Illustration</li>
+               </ul>
+            </div>
 
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>After accruing considerable design, technical and experience debt, I worked to improve accesibility, data-entry reliability and engineering velocity by 30% after leading the design system's next iteration.</p>
-          </div>
+            <div class="my-8 col-span-8">
+               <img src="assets/img/k8s/4.jpg" alt="" class="rounded-xl">
+            </div>
+         </div>
+      </section>
 
-          <div class="column is-offset-1-desktop is-4-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>Product Strategy</li>
-              <li>User Research</li>
-              <li>User Interface Design (Web, Mobile)</li>
-              <li>User Experience Design</li>
-              <li>Hi-fi Prototyping</li>
-            </ul>
-          </div>
+      <section class="relative isolate col-span-1 transition-opacity duration-700">
+         <div class="grid grid-cols-8 gap-6 text-gray-600">
+            <div class="col-span-8">
+               <h3 class="text-sm/6 tracking-widest uppercase text-gray-600">Scratch Financial</h3>
+               <h2 class="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl text-gray-800">The heartbeat of healthcare experience</h2>
+            </div>
+            <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+               <h3 class=" text-sm/6 tracking-widest uppercase">Summary</h3>
+               <p class="mt-2 text-lg">As Scratch grew from vet care to broader healthcare, I designed and coded key touchpoints—using Tailwind to bring order and care to emails, landing pages, and onboarding flows. Working with design, I helped evolve the system for a consistent, trustworthy experience. It wasn’t just pixels and code—it was building access and trust in healthcare.</p>
+            </div>
 
-          <div class="column is-2-desktop is-full-mobile">
-            <p class="label mb-2">Misc</p>
-            <ul>
-              <li><a href="https://bit.ly/3NIsg9b">Case study ↗︎</a></li>
-            </ul>
-          </div>
+            <div class="mt-6 col-span-8 lg:col-span-2 lg:col-start-6">
+               <p class="text-sm/6 uppercase tracking-widest">Role</p>
+               <ul class="mt-2 text-lg">
+                  <li>User Interface Design</li>
+                  <li>Front-end development</li>
+                  <li>Content Design & Copywriting</li>
+                  <li>Branding</li>
+                  <li>Illustration</li>
+               </ul>
+            </div>
 
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/vouch-ds/hero.png">
-            </figure>
-          </div>
-          <div class="column is-4">
-            <figure class="image">
-              <img src="assets/img/vouch-ds/text-fill-empty.gif">
-            </figure>
-            <p class="caption">Transition from empty to populated field</p>
-          </div>
-          <div class="column is-4">
-            <figure class="image">
-              <img src="assets/img/vouch-ds/input-empty.gif">
-            </figure>
-            <p class="caption">Empty text field, multiple status</p>
-          </div>
-          <div class="column is-4">
-            <figure class="image">
-              <img src="assets/img/vouch-ds/input-filled.gif">
-            </figure>
-            <p class="caption">Populated text field, multiple status</p>
-          </div>
-          <div class="column is-full">
-            <figure class="image">
-              <img src="assets/img/vouch-ds/select.png" alt="Input field, select">
-            </figure>
-          </div>
-          <div class="column is-4-desktop is-full-mobile">
-            <figure class="image">
-              <img src="assets/img/vouch-ds/buttons.png" alt="">
-            </figure>
-          </div>
-          <div class="column is-7-desktop is-offset-1-desktop is-full-mobile">
-            <figure class="image"><img src="assets/img/vouch-ds/typesetting-demo.png" alt=""></figure>
-          </div>
+            <div class="my-8 col-span-8 grid grid-cols-6 gap-4">
+               <img src="assets/img/scratch/01.jpg" alt="" class="col-span-6 rounded-xl" >
+               <img src="assets/img/scratch/02.jpg" alt="" class="col-span-6 lg:col-span-2 rounded-xl" >
+               <img src="assets/img/scratch/03.jpg" alt="" class="col-span-6 lg:col-span-2 rounded-xl" >
+               <img src="assets/img/scratch/04.jpg" alt="" class="col-span-6 lg:col-span-2 rounded-xl" >
+            </div>
+         </div>
+      </section>
 
-        </div>
+      <section class="relative isolate pb-32 text-gray-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl text-gray-800">Let’s work together</h2>
+          <p class="text-lg my-8">
+            Got an idea, a project, or just want to vibe? I’d love to hear from you.
+         </p>
+         <a href="mailto:hi@maruma.ru" class="inline-block hover-links font-semibold">Get in touch <span aria-hidden="true">→</span></a>
       </div>
-    </section>
-
-    <section class="animation animate__animated">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
-
-          <div class="column is-full">
-            <p class="company">Bitso</p>
-            <p class="title">Increasing recurring transactions by 42% through user onboarding</p>
-          </div>
-
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>Created the onboarding flow to guide users from diverse countries through creating and funding their cryto wallet, while navigating the intricacies of different jurisdictions' regulations and users different cultural perception of identity.</p>
-          </div>
-
-          <div class="column is-offset-1-desktop is-4-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>Product Strategy</li>
-              <li>User Research</li>
-              <li>User Interface Design (Web, Android, iOS)</li>
-              <li>User Experience Design</li>
-              <li>Hi-fi Prototyping</li>
-            </ul>
-          </div>
-
-          <div class="column is-2-desktop is-full-mobile">
-            <p class="label mb-2">Misc</p>
-            <ul>
-              <li><a href="https://bit.ly/3WQqMNK">Case study ↗︎</a></li>
-            </ul>
-          </div>
-
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/bitso-onboarding/onboarding-hero.png">
-            </figure>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="animation animate__animated">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
-
-          <div class="column is-full">
-            <p class="company">Bitso</p>
-            <p class="title">Identifying if users are political exposed persons</p>
-          </div>
-
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>Led user research to launch a version of the onboarding that increased successful verification and first transaction rates after introducing changes to successfully identify Politically Exposed Persons while aligning across multiple countries regulatory frameworks.</p>
-          </div>
-
-          <div class="column is-offset-1-desktop is-5-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>User Research</li>
-              <li>User Interface Design (Web, Android, iOS)</li>
-              <li>User Experience Design</li>
-              <li>Hi-fi Prototyping</li>
-            </ul>
-          </div>
-
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/bitso-pep/bitso-pep-hero.png">
-            </figure>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="animation animate__animated">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
-
-          <div class="column is-full">
-            <p class="company">Kubernetes</p>
-            <p class="title">A bit quarky</p>
-          </div>
-
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>The LHC is the world’s largest and most powerful particle accelerator and the result of the collaboration of thousands of scientists from around the world, all for the advancement of science. In a similar manner, Kubernetes has been a project that has united thousands of contributors from hundreds of organizations – all to work towards the same goal of improving cloud computing in all aspects! "A Bit Quarky" as the release name is meant to remind us that unconventional ideas can bring about great change and keeping an open mind to diversity will lead help us innovate.</p>
-          </div>
-
-          <div class="column is-3-desktop is-offset-1-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>Branding</li>
-              <li>Illustration</li>
-            </ul>
-          </div>
-
-          <div class="column is-2-desktop is-full-mobile">
-            <p class="label mb-2">Misc</p>
-            <ul>
-              <li><a href="https://kubernetes.io/blog/2020/03/25/kubernetes-1-18-release-announcement/">Release annoucement ↗︎</a></li>
-              <li><a href="https://store.cncf.io/products/fitted-kubernetes-1-18-release-team-tee">Swag ↗︎</a></li>
-            </ul>
-          </div>
-
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/k8s/4.jpg">
-            </figure>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="animation animate__animated">
-      <div class="container is-fluid">
-        <div class="columns is-multiline">
-
-          <div class="column is-full">
-            <p class="company">Datank</p>
-            <p class="title">Crystal Clear Data Science</p>
-          </div>
-
-          <div class="column is-5-desktop is-full-mobile">
-            <p class="label mb-2">Summary</p>
-            <p>As founding designer, I built a solid branding and a robust product strategy for pioneering Artificial Intelligence in order to provide complex business intelligence analysis using voice inputs.</p>
-          </div>
-
-          <div class="column is-offset-1-desktop is-5-desktop is-full-mobile">
-            <p class="label mb-2">Role</p>
-            <ul>
-              <li>Branding</li>
-              <li>0>1 Product Strategy</li>
-              <li>User Interface Design</li>
-              <li>Voice User Interface</li>
-              <li>User Experience Design</li>
-            </ul>
-          </div>
-
-          <div class="column is-full">
-            <figure class="image is-16by9">
-              <img src="assets/img/datank/datank-hero.png">
-            </figure>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </article>
+   </section>
 
 
-  <footer>
-    <div class="container is-fluid">
-      <div class="columns is-multiline">
-        <div class="column is-full">
-          <a href="https://dribbble.com/marulango" target="_blank">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-dribbble">
-            </svg>
-          </a>
-
-          <a href="https://www.threads.net/@marulango" target="_blank">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-threads">
-            </svg>
-          </a>
-
-          <a href="https://www.linkedin.com/in/marulango" target="_blank">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-linkedin">
-            </svg>
-          </a>
-        </div>
-
-        <div class="column is-full">
-          <p>Maru Maru © 2024</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script>
-      function addAnimationClass(entries, observer) {
-        entries.forEach(entry => {
-
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate__fadeIn');
-          } else {
-            entry.target.classList.remove('animate__fadeIn');
-          }
-        });
-      }
 
 
-      let observer = new IntersectionObserver(addAnimationClass, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1 
-      });
+</article>
 
+<footer class="py-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center space-y-4 sm:space-y-2">
 
-      document.querySelectorAll('.animation').forEach(testElem => {
-        observer.observe(testElem); // Observe each 'test' element
-      });
-    </script>
+      <!-- Social Icons -->
+      <div class="flex space-x-6">
+        <a href="https://dribbble.com/marulango" target="_blank" aria-label="Dribbble">
+          <svg class="w-6 h-6 hover-svg">
+            <use xlink:href="assets/img/symbols.svg#icon-dribbble"></use>
+         </svg>
+      </a>
+      <a href="https://www.threads.net/@marulango" target="_blank" aria-label="Threads">
+       <svg class="w-6 h-6 hover-svg">
+         <use xlink:href="assets/img/symbols.svg#icon-threads"></use>
+      </svg>
+   </a>
+   <a href="https://www.linkedin.com/in/marulango" target="_blank" aria-label="LinkedIn">
+    <svg class="w-6 h-6 hover-svg">
+      <use xlink:href="assets/img/symbols.svg#icon-linkedin"></use>
+   </svg>
+</a>
+</div>
+
+<!-- Copyright -->
+<div>
+  <p class="text-sm text-gray-600 font-semibold mt-8">Maru Maru © 2025</p>
+</div>
+
+</div>
+</div>
+</footer>
+
+<script src="utils.js"></script>
+
 </body>
 </html>
